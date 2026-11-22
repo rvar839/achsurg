@@ -88,13 +88,30 @@ nav button.on { color: var(--accent); font-weight: 600; }
 .panel p { line-height: 1.55; }
 
 /* Flashcards */
-.card { background: var(--surface); border-radius: 20px; padding: 22px; min-height: 280px; cursor: pointer; }
+.progress { height: 3px; border-radius: 2px; background: var(--track); margin: 0 2px 14px; overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+.card {
+  background: var(--surface); border-radius: 20px; padding: 22px; min-height: 300px; cursor: pointer;
+  touch-action: pan-y; user-select: none; -webkit-user-select: none;
+}
+.card.revealed { cursor: default; }
 .card .tag { font-size: 13px; }
-.cloze-text { font-size: 21px; line-height: 1.6; margin-top: 18px; }
-.cloze { color: var(--accent); font-weight: 600; white-space: nowrap; }
-.cloze.shown { color: var(--good); white-space: normal; }
-.extra { color: var(--muted); line-height: 1.55; }
-.hint { margin-top: 20px; font-size: 14px; color: var(--muted); opacity: .7; }
+.cloze-text { font-size: 22px; line-height: 1.55; margin-top: 20px; font-weight: 500; letter-spacing: -.005em; }
+.cloze { color: var(--accent); font-weight: 700; }
+.cloze.blank {
+  display: inline-block; min-width: 3.4em; height: 1.15em; vertical-align: -0.18em;
+  background: var(--accent-soft); border-bottom: 2px solid var(--accent); border-radius: 6px 6px 2px 2px;
+}
+.cloze.shown { color: var(--good); background: color-mix(in srgb, var(--good) 13%, transparent); border-radius: 6px; padding: 1px 5px; margin: 0 -1px; }
+.points { list-style: none; margin: 20px 0 0; padding: 16px 0 0; border-top: 1px solid var(--track); }
+.points li { position: relative; padding-left: 16px; line-height: 1.45; font-size: 16px; color: var(--text); opacity: .82; }
+.points li + li { margin-top: 9px; }
+.points li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+.hint { margin-top: 22px; font-size: 14px; color: var(--muted); opacity: .7; }
+.btn.two { padding: 10px; line-height: 1.25; }
+.btn.two span, .btn.two small { display: block; }
+.btn.two small { font-size: 12px; font-weight: 500; opacity: .85; }
+.session { color: var(--text); margin-bottom: 6px; }
 
 /* Analytics */
 .ring { position: relative; width: 200px; height: 200px; margin: 8px auto 16px; }

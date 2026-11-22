@@ -77,7 +77,36 @@
   }
 
   function missedCard(q) {
-    return { id: 'missed-' + q.id, topic: q.topic, text: q.card.text, extra: q.card.extra, fromMissed: true };
+    return { id: 'missed-' + q.id, topic: q.topic, text: q.card.text, extra: q.card.extra,
+             points: q.card.points, fromMissed: true };
+  }
+
+  // One fact per card: a sentence with several blanks becomes several cards,
+  // each hiding a single blank while the rest of the sentence stays visible.
+  function expand(card) {
+    var blanks = segments(card.text).filter(function (s) { return s.cloze; }).length;
+    if (blanks <= 1) return [Object.assign({ parent: card.id, target: 0 }, card)];
+    var out = [];
+    for (var k = 0; k < blanks; k++) {
+      out.push(Object.assign({}, card, { id: card.id + '.' + (k + 1), parent: card.id, target: k }));
+    }
+    return out;
+  }
+
+  // How long until the card returns for each answer, in milliseconds.
+  function preview(state, knew, now) {
+    return review(state, knew, now).due - now;
+  }
+
+  function formatInterval(ms) {
+    var minutes = Math.round(ms / 60000);
+    if (minutes < 60) return Math.max(1, minutes) + ' min';
+    var hours = Math.round(ms / 3600000);
+    if (hours < 20) return hours + ' h';
+    var days = Math.max(1, Math.round(ms / DAY));
+    if (days < 30) return days + (days === 1 ? ' day' : ' days');
+    var months = Math.round(days / 30);
+    return months + (months === 1 ? ' month' : ' months');
   }
 
   // Full deck for a user: cards from missed questions first, then the core deck.
@@ -86,7 +115,9 @@
     content.questions.forEach(function (q) { byId[q.id] = q; });
     var missed = progress.missed.filter(function (id) { return byId[id]; })
       .map(function (id) { return missedCard(byId[id]); });
-    return missed.concat(content.cards);
+    var out = [];
+    missed.concat(content.cards).forEach(function (card) { out.push.apply(out, expand(card)); });
+    return out;
   }
 
   function recordAnswer(progress, q, correct, now) {
@@ -297,7 +328,7 @@
 
   var Core = {
     GOAL: GOAL, DAY: DAY, INTERVALS: INTERVALS, RELEARN_MS: RELEARN_MS,
-    review: review, cardCredit: cardCredit, segments: segments, plain: plain,
+    review: review, preview: preview, formatInterval: formatInterval, cardCredit: cardCredit, segments: segments, plain: plain,
     emptyProgress: emptyProgress, lastResults: lastResults, deck: deck,
     recordAnswer: recordAnswer, recordReview: recordReview, streak: streak,
     summarize: summarize, pct: pct, sha256: sha256

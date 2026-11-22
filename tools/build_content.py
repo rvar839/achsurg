@@ -21,6 +21,17 @@ def slug(topic):
     return re.sub(r"[^a-z]+", "-", topic.lower()).strip("-")
 
 
+def points(extra):
+    """Split an explanation into short, scannable lines (keeps 'S. aureus' style abbreviations intact)."""
+    return [p.strip() for p in re.split(r"(?<=\S\S)\.\s+(?=[A-Z0-9])", extra.strip()) if p.strip()]
+
+
+def with_points(card):
+    parts = points(card["extra"])
+    parts = [p if p.endswith(".") else p + "." for p in parts]
+    return dict(card, points=parts)
+
+
 def build_questions():
     out = []
     for i, q in enumerate(QUESTIONS, start=1):
@@ -36,7 +47,7 @@ def build_questions():
             "choices": [q["choices"][j] for j in order],
             "answer": order.index(q["answer"]),
             "explanation": q["explanation"],
-            "card": q["card"],
+            "card": with_points(q["card"]),
         })
     return out
 
@@ -46,7 +57,7 @@ def build_cards():
     for topic, cards in CARDS.items():
         for i, (text, extra) in enumerate(cards, start=1):
             assert CLOZE.search(text), text
-            out.append({"id": f"{slug(topic)}-{i:03d}", "topic": topic, "text": text, "extra": extra})
+            out.append(with_points({"id": f"{slug(topic)}-{i:03d}", "topic": topic, "text": text, "extra": extra}))
     return out
 
 

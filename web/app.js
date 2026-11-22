@@ -17,7 +17,7 @@
   var tab = 'qbank';
   var login = { selected: null, failed: false };
   var qb = { q: null, selected: null, answered: 0, correct: 0 };
-  var fc = { queue: [], revealed: false, started: false };
+  var fc = { queue: [], revealed: false, started: false, done: 0, known: 0 };
   var settings = { confirmReset: false };
 
   // ---- Storage -----------------------------------------------------------
@@ -46,10 +46,15 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
-  function clozeHTML(text, revealed) {
+  // `target` is the one blank this card tests; other blanks in the sentence are shown as plain text.
+  function clozeHTML(text, revealed, target) {
+    var k = -1;
     return Core.segments(text).map(function (s) {
       if (!s.cloze) return esc(s.text);
-      return revealed ? '<b class="cloze shown">' + esc(s.text) + '</b>' : '<b class="cloze">[ ... ]</b>';
+      k += 1;
+      if (target !== undefined && k !== target) return esc(s.text);
+      return revealed ? '<b class="cloze shown">' + esc(s.text) + '</b>'
+                      : '<b class="cloze blank" aria-label="blank">&nbsp;</b>';
     }).join('');
   }
   function scoreClass(v) { return v >= Core.GOAL ? 'good' : v >= 0.5 ? 'warn' : 'bad'; }
@@ -132,13 +137,33 @@
       .concat(rest.filter(function (c) { return !weak[c.topic]; }));
   }
 
+  // Take up to `limit` new cards, never two from the same sentence in one sitting
+  // (seeing one blank filled in would give away its sibling).
+  function pickNew(cards, limit, taken) {
+    var recent = Date.now() - 12 * 3600000;
+    var used = taken || {};
+    Object.keys(progress.cards).forEach(function (id) {
+      if (progress.cards[id].last > recent) used[id.replace(/\.\d+$/, '')] = true;
+    });
+    var out = [];
+    cards.forEach(function (c) {
+      if (out.length >= limit || used[c.parent]) return;
+      used[c.parent] = true;
+      out.push(c);
+    });
+    return out;
+  }
+
   function buildQueue(includeNew) {
     var now = Date.now();
     var due = Core.deck(content, progress)
       .filter(function (c) { return progress.cards[c.id] && progress.cards[c.id].due <= now; })
       .sort(function (a, b) { return progress.cards[a.id].due - progress.cards[b.id].due; });
     var fresh = newCards();
-    var batch = includeNew ? fresh.slice(0, NEW_PER_BATCH) : fresh.filter(function (c) { return c.fromMissed; });
+    var taken = {};
+    due.forEach(function (c) { taken[c.parent] = true; });
+    var batch = pickNew(includeNew ? fresh : fresh.filter(function (c) { return c.fromMissed; }),
+                        includeNew ? NEW_PER_BATCH : 50, taken);
     fc.queue = due.concat(batch);
     fc.revealed = false;
   }
@@ -148,10 +173,10 @@
     if (!fc.queue.length) { buildQueue(false); return; }
     // Pull in cards created by Qbank misses since this tab was last open.
     var queued = {};
-    fc.queue.forEach(function (c) { queued[c.id] = true; });
-    var missed = Core.deck(content, progress).filter(function (c) {
-      return c.fromMissed && !progress.cards[c.id] && !queued[c.id];
-    });
+    fc.queue.forEach(function (c) { queued[c.parent] = true; });
+    var missed = pickNew(Core.deck(content, progress).filter(function (c) {
+      return c.fromMissed && !progress.cards[c.id];
+    }), 50, queued);
     if (missed.length) fc.queue.splice.apply(fc.queue, [Math.min(1, fc.queue.length), 0].concat(missed));
   }
 
@@ -161,34 +186,56 @@
     Core.recordReview(progress, card, knew, Date.now());
     save();
     fc.queue.shift();
+    fc.done += 1;
+    if (knew) fc.known += 1;
     // A card you did not know comes back after a few others in this same session.
     if (!knew) fc.queue.splice(Math.min(fc.queue.length, 5), 0, card);
     fc.revealed = false;
   }
 
+  function nextDueText() {
+    var now = Date.now(), next = Infinity;
+    Object.keys(progress.cards).forEach(function (id) {
+      var due = progress.cards[id].due;
+      if (due > now && due < next) next = due;
+    });
+    return next === Infinity ? '' : 'Next review in ' + Core.formatInterval(next - now) + '.';
+  }
+
   function flashcardsHTML() {
     var card = fc.queue[0];
     if (!card) {
-      var remaining = newCards().length;
+      var remaining = pickNew(newCards(), NEW_PER_BATCH).length;
+      var session = fc.done ? '<p class="session">' + fc.done + ' reviewed this session, ' +
+        Core.pct(fc.known / fc.done) + ' known.</p>' : '';
       return {
-        main: '<div class="empty"><h2>All caught up</h2><p>No cards are due right now. ' +
-          (remaining ? remaining + ' new cards are waiting.' : 'Come back later for your next reviews.') + '</p>' +
-          (remaining ? '<button class="btn primary inline" data-action="more">Learn ' +
-            Math.min(NEW_PER_BATCH, remaining) + ' new cards</button>' : '') + '</div>'
+        main: '<div class="empty"><h2>All caught up</h2>' + session +
+          '<p>' + (nextDueText() || 'No cards are due right now.') + '</p>' +
+          (remaining ? '<button class="btn primary inline" data-action="more">Learn ' + remaining + ' new cards</button>' : '') +
+          '</div>'
       };
     }
-    var html = '<div class="card" data-action="reveal">' +
+    var state = progress.cards[card.id];
+    var total = fc.done + fc.queue.length;
+    var points = (card.points && card.points.length ? card.points : [card.extra]);
+    var html = '<div class="progress"><i style="width:' + (total ? (100 * fc.done / total).toFixed(0) : 0) + '%"></i></div>' +
+      '<div class="card' + (fc.revealed ? ' revealed' : '') + '" data-action="reveal">' +
       '<div class="row">' + chip(card.topic) +
-      (card.fromMissed ? '<span class="tag warn">From a missed question</span>' : '') + '</div>' +
-      '<p class="cloze-text">' + clozeHTML(card.text, fc.revealed) + '</p>' +
-      (fc.revealed ? '<hr><p class="extra">' + esc(card.extra) + '</p>'
-                   : '<p class="hint">Tap to reveal</p>') + '</div>';
+      '<span class="tag ' + (card.fromMissed ? 'warn' : 'muted') + '">' +
+      (card.fromMissed ? 'Missed question' : !state ? 'New' : state.lapses ? 'Relearning' : 'Review') + '</span></div>' +
+      '<p class="cloze-text">' + clozeHTML(card.text, fc.revealed, card.target) + '</p>' +
+      (fc.revealed
+        ? '<ul class="points">' + points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>'
+        : '<p class="hint">Tap to reveal</p>') + '</div>';
     var off = fc.revealed ? '' : ' disabled';
+    var now = Date.now();
     return {
       main: html,
       side: fc.queue.length + ' left',
-      actions: '<button class="btn bad" data-action="dontknow"' + off + '>Don\'t know</button>' +
-               '<button class="btn good" data-action="know"' + off + '>Know</button>'
+      actions: '<button class="btn bad two" data-action="dontknow"' + off + '><span>Don\'t know</span><small>again in ' +
+               Core.formatInterval(Core.preview(state, false, now)) + '</small></button>' +
+               '<button class="btn good two" data-action="know"' + off + '><span>Know</span><small>back in ' +
+               Core.formatInterval(Core.preview(state, true, now)) + '</small></button>'
     };
   }
 
@@ -298,7 +345,7 @@
   function startSession() {
     tab = 'qbank';
     qb = { q: null, selected: null, answered: 0, correct: 0 };
-    fc = { queue: [], revealed: false, started: false };
+    fc = { queue: [], revealed: false, started: false, done: 0, known: 0 };
     nextQuestion();
   }
 
@@ -357,6 +404,49 @@
       default: return;
     }
     render(keepScroll);
+  });
+
+  // Swipe a revealed card: right = Know, left = Don't know.
+  var touch = null;
+  app.addEventListener('touchstart', function (event) {
+    var el = event.target.closest('.card');
+    if (!el || tab !== 'flashcards' || !fc.revealed) { touch = null; return; }
+    var t = event.touches[0];
+    touch = { x: t.clientX, y: t.clientY, dx: 0, dy: 0, el: el };
+  }, { passive: true });
+  app.addEventListener('touchmove', function (event) {
+    if (!touch) return;
+    var t = event.touches[0];
+    touch.dx = t.clientX - touch.x;
+    touch.dy = t.clientY - touch.y;
+    if (Math.abs(touch.dx) > Math.abs(touch.dy)) {
+      touch.el.style.transform = 'translateX(' + touch.dx + 'px) rotate(' + (touch.dx / 40) + 'deg)';
+      touch.el.style.boxShadow = '0 0 0 2px var(--' + (touch.dx > 0 ? 'good' : 'bad') + ')';
+    }
+  }, { passive: true });
+  app.addEventListener('touchend', function () {
+    if (!touch) return;
+    var t = touch;
+    touch = null;
+    if (Math.abs(t.dx) > 80 && Math.abs(t.dx) > Math.abs(t.dy) * 1.5) {
+      answerCard(t.dx > 0);
+      render();
+    } else {
+      t.el.style.transform = '';
+      t.el.style.boxShadow = '';
+    }
+  });
+
+  // Keyboard on a computer: Space reveals, Right arrow = Know, Left arrow = Don't know.
+  document.addEventListener('keydown', function (event) {
+    if (!user || tab !== 'flashcards' || !fc.queue.length) return;
+    if (event.target && event.target.tagName === 'INPUT') return;
+    if (!fc.revealed && (event.key === ' ' || event.key === 'Enter')) { fc.revealed = true; }
+    else if (fc.revealed && event.key === 'ArrowRight') { answerCard(true); }
+    else if (fc.revealed && event.key === 'ArrowLeft') { answerCard(false); }
+    else return;
+    event.preventDefault();
+    render(!fc.revealed ? false : true);
   });
 
   app.addEventListener('submit', function (event) {
