@@ -18,8 +18,11 @@ jobs:
       - name: Build & test
         run: |
           set -o pipefail
+          # Use whichever iPhone simulator this runner has.
+          UDID=$(xcrun simctl list devices available | grep -m1 -E "^ +iPhone" | grep -oE "[0-9A-F]{8}-[0-9A-F-]{27}")
+          echo "Simulator: $UDID"
           xcodebuild test \
             -project Absite.xcodeproj \
             -scheme Absite \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination "platform=iOS Simulator,id=$UDID" \
             CODE_SIGNING_ALLOWED=NO

@@ -12,7 +12,7 @@ open: project
 
 test: project
 	xcodebuild test -project Absite.xcodeproj -scheme Absite \
-	  -destination 'platform=iOS Simulator,name=iPhone 16' CODE_SIGNING_ALLOWED=NO
+	  -destination "platform=iOS Simulator,id=$$(xcrun simctl list devices available | grep -m1 -E '^ +iPhone' | grep -oE '[0-9A-F]{8}-[0-9A-F-]{27}')" CODE_SIGNING_ALLOWED=NO
 
 web:
 	cd web && python3 -m http.server 8080
