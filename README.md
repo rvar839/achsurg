@@ -13,8 +13,8 @@ iPhone app by Vibgen · **https://absite.vibgen.com**
 ## Getting started (Mac)
 
 ```sh
-git clone https://github.com/rvar839/absite.git
-cd absite
+git clone https://github.com/rvar839/achsurg.git
+cd achsurg
 make bootstrap   # installs XcodeGen, generates Absite.xcodeproj
 make open        # opens in Xcode
 ```
