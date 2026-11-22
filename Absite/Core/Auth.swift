@@ -15,6 +15,10 @@ enum Auth {
     static let users: [UserAccount] = [
         UserAccount(name: "Achi",
                     passcodeHash: "c7349cb0d25b2d0c27f7f896c67b605fc51e207205db15c50cca2818448354d0"),
+        UserAccount(name: "Mahe",
+                    passcodeHash: "368c0eafc2fbd8da7ea98c0d0429b1e3292c4ef7914eeb6e47a11fa1c26b184d"),
+        UserAccount(name: "Rahul",
+                    passcodeHash: "45878fb4be730f671a50907dcdc8c4f78a5ea05cc4b586d98200e55c274c6f84"),
     ]
 
     static func hash(_ passcode: String) -> String {
