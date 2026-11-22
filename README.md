@@ -1,6 +1,8 @@
 # Absite
 
-iPhone app by Vibgen · **https://absite.vibgen.com**
+ABSITE study app for iPhone by Vibgen · **https://absite.vibgen.com**
+
+Three connected parts: a **Qbank** (random questions with explanations), **Flashcards** (cloze cards with two-button spaced repetition; missed questions become cards), and **Analytics** (one score with a 70% goal, topic strengths, and a manual review list).
 
 | | |
 |---|---|
@@ -27,13 +29,20 @@ The `.xcodeproj` is generated and git-ignored, so edit `project.yml` instead of 
 ```
 Absite/
   App/          entry point + root tab view
-  Core/         config, routing (universal links)
-  Features/     one folder per feature (Home, Settings, …)
-  Resources/    assets
+  Core/         models, scheduler, analytics, progress storage, login
+  Features/     Login, Qbank, Flashcards, Analytics, Settings
+  Resources/    assets + Content/ (questions.json, cards.json)
 AbsiteTests/    unit tests
+tools/          content source (questions.py, cards.py) + build_content.py
 web/            absite.vibgen.com (landing, privacy, support, AASA)
 docs/           roadmap and setup checklist
 ```
+
+## Adding content
+
+Edit `tools/questions.py` and `tools/cards.py`, then run `python3 tools/build_content.py`.
+It validates the content and regenerates the JSON the app ships with.
+All content must be reviewed by a surgeon before release.
 
 ## Domain: absite.vibgen.com
 

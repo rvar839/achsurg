@@ -1,25 +1,22 @@
 # Absite roadmap
 
-## 0. Define the product (open)
-- [ ] One-sentence pitch: what Absite does and who it's for
-- [ ] The first core feature (replaces the placeholder in `HomeView`)
-- [ ] Does it need accounts / a backend? (`AppConfig.apiBaseURL` is reserved as `api.absite.vibgen.com`)
-- [ ] App icon (1024×1024 into `Assets.xcassets/AppIcon.appiconset`)
+## Done
+- [x] Login (pick name + passcode)
+- [x] Qbank with explanations; misses become flashcards
+- [x] Flashcards: cloze format, Know / Don't know, spaced repetition
+- [x] Analytics: single score (goal 70%), topics weak to strong, manual review list
+- [x] Website live at absite.vibgen.com
 
-## 1. Accounts & setup
+## Content
+- [ ] Clinical review of every starter question and card
+- [ ] Grow the deck toward 2,000 cards and the Qbank toward several hundred questions
+
+## Accounts & setup
 - [ ] Apple Developer Program membership; note Team ID
-- [ ] Register App ID `com.vibgen.absite` with Associated Domains capability
-- [ ] Create the app record in App Store Connect
-- [ ] DNS CNAME `absite` → `rvar839.github.io`; enable GitHub Pages
-- [ ] Fill `DEVELOPMENT_TEAM` and AASA `TEAMID`
+- [ ] Fill `DEVELOPMENT_TEAM` in `project.yml` and `TEAMID` in the AASA file
+- [ ] App icon (1024x1024 into `Assets.xcassets/AppIcon.appiconset`)
 
-## 2. MVP
-- [ ] Build first feature
-- [ ] Persistence (SwiftData) if needed
-- [ ] Onboarding screen
-
-## 3. Ship
-- [ ] Real privacy policy + support page
-- [ ] TestFlight (consider fastlane or Xcode Cloud)
-- [ ] App Store screenshots & listing
-- [ ] Add `apple-itunes-app` smart banner to the website
+## Later
+- [ ] Real accounts and cloud sync (progress is stored on the device for now)
+- [ ] LLM-written insights (current insights are computed on the device)
+- [ ] TestFlight, App Store listing, real privacy policy

@@ -1,0 +1,784 @@
+[
+ {
+  "id": "q001",
+  "topic": "Trauma",
+  "stem": "A 24-year-old man arrives after a stab wound to zone II of the neck. He has an expanding hematoma and stridor. After the airway is secured, what is the next step?",
+  "choices": [
+   "Operative neck exploration",
+   "Esophagoscopy and bronchoscopy",
+   "CT angiography of the neck",
+   "Observation with serial exams"
+  ],
+  "answer": 0,
+  "explanation": "Hard signs of vascular or aerodigestive injury (expanding or pulsatile hematoma, active bleeding, shock, air bubbling, stridor) mandate operative exploration regardless of zone. Stable patients without hard signs are evaluated with CT angiography.",
+  "card": {
+   "text": "Penetrating neck injury with {{hard signs}} (expanding hematoma, active bleeding, stridor, air bubbling) goes straight to {{operative exploration}}.",
+   "extra": "No hard signs and stable: CT angiography first, then selective endoscopy or esophagram."
+  }
+ },
+ {
+  "id": "q002",
+  "topic": "Trauma",
+  "stem": "A 40-year-old woman is hypotensive (BP 78/40) after a motor vehicle crash despite 2 units of blood. FAST shows fluid in Morison's pouch. Chest and pelvic films are normal. Next step?",
+  "choices": [
+   "Angiography",
+   "CT of the abdomen and pelvis",
+   "Diagnostic peritoneal lavage",
+   "Exploratory laparotomy"
+  ],
+  "answer": 3,
+  "explanation": "A hemodynamically unstable blunt trauma patient with a positive FAST goes to the operating room. CT is only for patients stable enough to leave the trauma bay.",
+  "card": {
+   "text": "Blunt trauma + {{hypotension}} + positive FAST = {{exploratory laparotomy}}.",
+   "extra": "Unstable patients do not go to CT. A stable patient with a positive FAST gets CT."
+  }
+ },
+ {
+  "id": "q003",
+  "topic": "Trauma",
+  "stem": "A 55-year-old man has an open-book pelvic fracture after a motorcycle crash. He remains hypotensive after a pelvic binder and transfusion. FAST is negative and the chest film is clear. Best next step?",
+  "choices": [
+   "External fixation in 48 hours",
+   "CT cystogram",
+   "Exploratory laparotomy",
+   "Pelvic angioembolization"
+  ],
+  "answer": 3,
+  "explanation": "With a negative FAST and no other source, the pelvis is the bleeding source. After a binder, ongoing instability is treated with angioembolization (or preperitoneal pelvic packing where angiography is not immediately available).",
+  "card": {
+   "text": "Unstable pelvic fracture with a negative FAST after a binder: {{angioembolization}} (or {{preperitoneal packing}}).",
+   "extra": "Most pelvic bleeding is venous or from bone; the binder reduces pelvic volume. Arterial bleeding needs embolization."
+  }
+ },
+ {
+  "id": "q004",
+  "topic": "Trauma",
+  "stem": "A chest tube placed for a stab wound to the right chest immediately drains 1,700 mL of blood. What is the next step?",
+  "choices": [
+   "Place a second chest tube",
+   "Clamp the chest tube",
+   "Thoracotomy in the operating room",
+   "CT angiography of the chest"
+  ],
+  "answer": 2,
+  "explanation": "Massive hemothorax is an indication for thoracotomy: more than 1,500 mL on insertion, or ongoing output above about 200 mL per hour for 2 to 4 hours.",
+  "card": {
+   "text": "Thoracotomy for hemothorax: more than {{1,500 mL}} initially, or more than {{200 mL/h}} for 2 to 4 hours.",
+   "extra": "Retained hemothorax that fails tube drainage is treated with early VATS (within about a week)."
+  }
+ },
+ {
+  "id": "q005",
+  "topic": "Critical Care",
+  "stem": "A 60-year-old with pancreatitis develops ARDS. Which ventilator strategy improves survival?",
+  "choices": [
+   "Inverse ratio ventilation targeting normal PaCO2",
+   "Tidal volume 6 mL/kg predicted body weight with plateau pressure under 30",
+   "Tidal volume 10 mL/kg actual body weight",
+   "Zero PEEP to avoid barotrauma"
+  ],
+  "answer": 1,
+  "explanation": "Lung-protective ventilation (ARDSNet) uses 6 mL/kg of predicted body weight and keeps plateau pressure at or below 30 cm H2O, accepting permissive hypercapnia.",
+  "card": {
+   "text": "ARDS ventilation: tidal volume {{6 mL/kg}} predicted body weight, plateau pressure under {{30}} cm H2O.",
+   "extra": "Permissive hypercapnia is accepted. Prone positioning helps when P/F is under 150."
+  }
+ },
+ {
+  "id": "q006",
+  "topic": "Critical Care",
+  "stem": "A patient with perforated diverticulitis remains hypotensive after 30 mL/kg of crystalloid. Which vasopressor is first line?",
+  "choices": [
+   "Epinephrine",
+   "Norepinephrine",
+   "Dopamine",
+   "Phenylephrine"
+  ],
+  "answer": 1,
+  "explanation": "Norepinephrine is the first-line vasopressor in septic shock. Vasopressin is the usual second agent. Dopamine causes more arrhythmias.",
+  "card": {
+   "text": "First-line vasopressor in septic shock: {{norepinephrine}}; add {{vasopressin}} second.",
+   "extra": "Target MAP 65 mmHg. Source control and early antibiotics matter most."
+  }
+ },
+ {
+  "id": "q007",
+  "topic": "Critical Care",
+  "stem": "After massive resuscitation for a ruptured AAA, a patient has rising peak airway pressures, oliguria, and a tense abdomen. Bladder pressure is 28 mmHg. Treatment?",
+  "choices": [
+   "CT of the abdomen",
+   "Decompressive laparotomy",
+   "Increase PEEP",
+   "Diuresis"
+  ],
+  "answer": 1,
+  "explanation": "Abdominal compartment syndrome is sustained intra-abdominal pressure above 20 mmHg with new organ dysfunction. Definitive treatment is decompressive laparotomy.",
+  "card": {
+   "text": "Abdominal compartment syndrome: bladder pressure over {{20 mmHg}} plus organ dysfunction; treat with {{decompressive laparotomy}}.",
+   "extra": "Signs: high airway pressures, low urine output, decreased venous return and cardiac output."
+  }
+ },
+ {
+  "id": "q008",
+  "topic": "Fluids & Electrolytes",
+  "stem": "A dialysis patient has a potassium of 7.1 mEq/L with peaked T waves and a widened QRS. What is given first?",
+  "choices": [
+   "Insulin and dextrose",
+   "Sodium polystyrene",
+   "Calcium gluconate",
+   "Albuterol"
+  ],
+  "answer": 2,
+  "explanation": "Calcium stabilizes the cardiac membrane within minutes and is given first when there are ECG changes. Insulin with glucose, albuterol, and bicarbonate shift potassium into cells; dialysis and binders remove it.",
+  "card": {
+   "text": "Hyperkalemia with ECG changes: first give {{calcium gluconate}} to stabilize the membrane.",
+   "extra": "Then shift potassium (insulin plus glucose, albuterol) and remove it (dialysis, diuretics, binders)."
+  }
+ },
+ {
+  "id": "q009",
+  "topic": "Nutrition",
+  "stem": "A severely malnourished patient is started on full-rate TPN. Two days later he has weakness and respiratory failure. Which abnormality is most likely?",
+  "choices": [
+   "Hyperkalemia",
+   "Hypophosphatemia",
+   "Hypernatremia",
+   "Hypercalcemia"
+  ],
+  "answer": 1,
+  "explanation": "Refeeding syndrome: the insulin surge drives phosphate, potassium, and magnesium into cells. Hypophosphatemia depletes ATP and causes weakness, respiratory failure, and cardiac dysfunction.",
+  "card": {
+   "text": "Refeeding syndrome hallmark: {{hypophosphatemia}} (also low potassium and magnesium).",
+   "extra": "Prevent by starting nutrition slowly and repleting electrolytes first."
+  }
+ },
+ {
+  "id": "q010",
+  "topic": "Hematology",
+  "stem": "A woman with heavy menses and bleeding after dental work has a normal platelet count, normal PT, and a mildly prolonged PTT. Best treatment before a minor procedure?",
+  "choices": [
+   "Platelet transfusion",
+   "Desmopressin (DDAVP)",
+   "Vitamin K",
+   "Protamine"
+  ],
+  "answer": 1,
+  "explanation": "Von Willebrand disease is the most common inherited bleeding disorder. vWF carries factor VIII, so PTT may be prolonged. Type 1 responds to DDAVP, which releases vWF and factor VIII from endothelium.",
+  "card": {
+   "text": "Most common inherited bleeding disorder: {{von Willebrand disease}}; type 1 is treated with {{DDAVP}}.",
+   "extra": "Type 3 (absent vWF) needs vWF/factor VIII concentrate. DDAVP does not work in type 3."
+  }
+ },
+ {
+  "id": "q011",
+  "topic": "Hematology",
+  "stem": "On day 7 of heparin after a hip fracture, a patient's platelets fall from 240 to 90 and he develops a new DVT. Next step?",
+  "choices": [
+   "Start warfarin alone",
+   "Stop heparin and start argatroban",
+   "Switch to enoxaparin",
+   "Transfuse platelets"
+  ],
+  "answer": 1,
+  "explanation": "Heparin-induced thrombocytopenia is caused by IgG against the heparin-PF4 complex and causes thrombosis. Stop all heparin, including LMWH, and start a non-heparin anticoagulant such as argatroban or bivalirudin.",
+  "card": {
+   "text": "HIT: antibodies to {{heparin-PF4}}; stop heparin and start a {{direct thrombin inhibitor}} (argatroban).",
+   "extra": "Platelets drop over 50% at days 5 to 10. Warfarin alone early risks skin necrosis and limb gangrene."
+  }
+ },
+ {
+  "id": "q012",
+  "topic": "Hematology",
+  "stem": "A patient on warfarin has an intracranial hemorrhage with an INR of 4.2. What is the fastest effective reversal?",
+  "choices": [
+   "Cryoprecipitate",
+   "Fresh frozen plasma alone",
+   "Four-factor prothrombin complex concentrate plus IV vitamin K",
+   "Vitamin K alone"
+  ],
+  "answer": 2,
+  "explanation": "Four-factor PCC reverses warfarin within minutes in a small volume. IV vitamin K is given with it for durable reversal.",
+  "card": {
+   "text": "Life-threatening bleeding on warfarin: {{four-factor PCC}} plus IV {{vitamin K}}.",
+   "extra": "PCC contains factors II, VII, IX, and X. FFP is slower and needs large volume."
+  }
+ },
+ {
+  "id": "q013",
+  "topic": "Infection",
+  "stem": "A diabetic man has rapidly spreading thigh erythema, pain out of proportion, bullae, and crepitus. He is tachycardic and hypotensive. What is the most important step?",
+  "choices": [
+   "Hyperbaric oxygen",
+   "MRI of the thigh",
+   "Broad antibiotics and reassess in 12 hours",
+   "Emergent wide surgical debridement"
+  ],
+  "answer": 3,
+  "explanation": "Necrotizing soft tissue infection is a surgical emergency. Do not delay for imaging. Give broad-spectrum antibiotics including clindamycin and debride until healthy bleeding tissue, with planned re-look.",
+  "card": {
+   "text": "Necrotizing soft tissue infection: treatment is emergent {{surgical debridement}} plus broad antibiotics with {{clindamycin}}.",
+   "extra": "Clues: pain out of proportion, bullae, crepitus, dishwater fluid, hyponatremia, rapid spread."
+  }
+ },
+ {
+  "id": "q014",
+  "topic": "Infection",
+  "stem": "A hospitalized patient on antibiotics develops a first episode of non-fulminant C. difficile colitis. Which initial treatment is appropriate?",
+  "choices": [
+   "Oral metronidazole for 6 weeks",
+   "Oral vancomycin",
+   "IV vancomycin",
+   "Loperamide"
+  ],
+  "answer": 1,
+  "explanation": "Initial C. difficile infection is treated with oral fidaxomicin or oral vancomycin. IV vancomycin does not reach the colon lumen. Fulminant disease gets high-dose oral vancomycin plus IV metronidazole; surgery is total abdominal colectomy with end ileostomy.",
+  "card": {
+   "text": "C. difficile: oral {{vancomycin}} or fidaxomicin. IV {{vancomycin}} does not work.",
+   "extra": "Fulminant: oral vancomycin plus IV metronidazole. Operation: total abdominal colectomy with end ileostomy."
+  }
+ },
+ {
+  "id": "q015",
+  "topic": "Anesthesia & Pharmacology",
+  "stem": "Thirty minutes after induction with sevoflurane and succinylcholine, a patient has rising end-tidal CO2, masseter rigidity, and tachycardia. Treatment?",
+  "choices": [
+   "Deepen the volatile anesthetic",
+   "Acetaminophen and cooling only",
+   "Neostigmine",
+   "Dantrolene"
+  ],
+  "answer": 3,
+  "explanation": "Malignant hyperthermia is a ryanodine receptor defect causing uncontrolled calcium release in muscle. The earliest sign is a rising end-tidal CO2. Stop the trigger, hyperventilate with 100% oxygen, give dantrolene, and cool.",
+  "card": {
+   "text": "Malignant hyperthermia: first sign is rising {{end-tidal CO2}}; treatment is {{dantrolene}}.",
+   "extra": "Triggers: succinylcholine and volatile anesthetics. Defect: ryanodine receptor. Dantrolene blocks calcium release."
+  }
+ },
+ {
+  "id": "q016",
+  "topic": "Wound Healing",
+  "stem": "Which cell is most essential for normal wound healing?",
+  "choices": [
+   "Lymphocyte",
+   "Neutrophil",
+   "Macrophage",
+   "Mast cell"
+  ],
+  "answer": 2,
+  "explanation": "Macrophages orchestrate healing by releasing growth factors and cytokines (PDGF, TGF-beta) that recruit fibroblasts and drive angiogenesis. Wounds heal without neutrophils but not without macrophages.",
+  "card": {
+   "text": "The cell most essential for wound healing is the {{macrophage}}.",
+   "extra": "It releases growth factors (PDGF, TGF-beta). Neutrophils are not required for healing."
+  }
+ },
+ {
+  "id": "q017",
+  "topic": "Breast",
+  "stem": "A core needle biopsy of mammographic calcifications shows atypical ductal hyperplasia. Next step?",
+  "choices": [
+   "Simple mastectomy",
+   "Sentinel lymph node biopsy",
+   "Excisional biopsy",
+   "Repeat mammogram in 6 months"
+  ],
+  "answer": 2,
+  "explanation": "Atypical ductal hyperplasia on core biopsy is upgraded to DCIS or invasive cancer in roughly 10 to 20 percent at excision, so surgical excision is recommended.",
+  "card": {
+   "text": "Atypical ductal hyperplasia on core biopsy needs {{excisional biopsy}} because of upstaging to DCIS or cancer.",
+   "extra": "ADH also raises lifetime breast cancer risk about 4 to 5 times; discuss chemoprevention."
+  }
+ },
+ {
+  "id": "q018",
+  "topic": "Breast",
+  "stem": "A woman with a 1.8 cm clinically node-negative invasive ductal cancer has lumpectomy and sentinel node biopsy. Two of three sentinel nodes are positive. She will receive whole-breast radiation and systemic therapy. Axillary management?",
+  "choices": [
+   "No further axillary surgery",
+   "Axillary radiation boost only if ER negative",
+   "Completion axillary dissection",
+   "Mastectomy"
+  ],
+  "answer": 0,
+  "explanation": "ACOSOG Z0011: with T1-T2 tumors, clinically negative nodes, one or two positive sentinel nodes, lumpectomy and whole-breast radiation, completion axillary dissection gives no survival or recurrence benefit.",
+  "card": {
+   "text": "Z0011: lumpectomy, whole-breast radiation, and {{1 to 2}} positive sentinel nodes means {{no axillary dissection}}.",
+   "extra": "Applies to T1-T2, clinically node-negative patients who did not get neoadjuvant chemotherapy."
+  }
+ },
+ {
+  "id": "q019",
+  "topic": "Endocrine",
+  "stem": "FNA of a thyroid nodule shows medullary thyroid carcinoma. What must be done before thyroidectomy?",
+  "choices": [
+   "Plasma metanephrines",
+   "TSH suppression",
+   "Radioactive iodine scan",
+   "Thyroglobulin level"
+  ],
+  "answer": 0,
+  "explanation": "Medullary thyroid cancer can be part of MEN2 (RET mutation). Pheochromocytoma must be excluded and treated first. Also check calcium, calcitonin, and CEA, and test for RET.",
+  "card": {
+   "text": "Before operating on medullary thyroid cancer, rule out {{pheochromocytoma}} (MEN2, {{RET}} mutation).",
+   "extra": "Treatment: total thyroidectomy with central neck dissection. Follow calcitonin and CEA. No role for radioactive iodine."
+  }
+ },
+ {
+  "id": "q020",
+  "topic": "Endocrine",
+  "stem": "A patient with a pheochromocytoma is being prepared for adrenalectomy. Correct medication sequence?",
+  "choices": [
+   "Beta blocker first, then alpha blocker",
+   "No preparation is needed",
+   "Beta blocker only",
+   "Alpha blocker first, then beta blocker if needed"
+  ],
+  "answer": 3,
+  "explanation": "Alpha blockade (phenoxybenzamine or doxazosin) and volume expansion come first. Starting a beta blocker first causes unopposed alpha vasoconstriction and hypertensive crisis.",
+  "card": {
+   "text": "Pheochromocytoma prep: {{alpha}} blockade first, then {{beta}} blockade.",
+   "extra": "Beta blockade first leaves alpha receptors unopposed. Ligate the adrenal vein early at surgery."
+  }
+ },
+ {
+  "id": "q021",
+  "topic": "Esophagus",
+  "stem": "A patient with dysphagia to solids and liquids has a bird's-beak esophagram. Manometry shows absent peristalsis and incomplete LES relaxation. Best surgical treatment?",
+  "choices": [
+   "Heller myotomy with partial fundoplication",
+   "Nissen fundoplication alone",
+   "Esophagectomy",
+   "Cricopharyngeal myotomy"
+  ],
+  "answer": 0,
+  "explanation": "Achalasia results from loss of inhibitory neurons in the myenteric plexus. Laparoscopic Heller myotomy with a partial (Dor or Toupet) fundoplication is standard; POEM and pneumatic dilation are alternatives.",
+  "card": {
+   "text": "Achalasia manometry: absent {{peristalsis}} and failure of the {{LES to relax}}.",
+   "extra": "Treatment: Heller myotomy with partial fundoplication, or POEM. Risk of squamous cell carcinoma is increased."
+  }
+ },
+ {
+  "id": "q022",
+  "topic": "Esophagus",
+  "stem": "An elderly man has regurgitation of undigested food and halitosis. Barium swallow shows a posterior pharyngeal pouch. What is the key component of treatment?",
+  "choices": [
+   "Proton pump inhibitor",
+   "Esophageal dilation of the LES",
+   "Cricopharyngeal myotomy",
+   "Diverticulectomy alone"
+  ],
+  "answer": 2,
+  "explanation": "Zenker's diverticulum is a false (pulsion) diverticulum through Killian's triangle caused by cricopharyngeal dysfunction. Myotomy of the cricopharyngeus is the essential step.",
+  "card": {
+   "text": "Zenker's diverticulum: a {{false}} diverticulum through Killian's triangle; key treatment is {{cricopharyngeal myotomy}}.",
+   "extra": "Killian's triangle lies between the inferior pharyngeal constrictor and the cricopharyngeus."
+  }
+ },
+ {
+  "id": "q023",
+  "topic": "Stomach",
+  "stem": "Endoscopy cannot control a bleeding posterior duodenal bulb ulcer. Which vessel is the source?",
+  "choices": [
+   "Left gastric artery",
+   "Splenic artery",
+   "Gastroduodenal artery",
+   "Right gastroepiploic artery"
+  ],
+  "answer": 2,
+  "explanation": "Posterior duodenal ulcers erode into the gastroduodenal artery. Surgery: longitudinal duodenotomy with three-point ligation. Anterior ulcers perforate.",
+  "card": {
+   "text": "Posterior duodenal ulcers bleed from the {{gastroduodenal artery}}; anterior ulcers {{perforate}}.",
+   "extra": "Operation: duodenotomy with three-point ligation (superior, inferior, and the transverse pancreatic branch)."
+  }
+ },
+ {
+  "id": "q024",
+  "topic": "Stomach",
+  "stem": "A 5 cm gastric submucosal mass is positive for CD117. It is resectable. Appropriate operation?",
+  "choices": [
+   "Chemoradiation only",
+   "Enucleation with 5 cm margins",
+   "Total gastrectomy with D2 lymphadenectomy",
+   "Resection with grossly negative margins, no lymphadenectomy"
+  ],
+  "answer": 3,
+  "explanation": "GISTs arise from the interstitial cells of Cajal and express c-KIT (CD117). They rarely spread to nodes, so a negative-margin wedge or segmental resection is enough. Imatinib is used for high-risk or metastatic disease.",
+  "card": {
+   "text": "GIST: cells of {{Cajal}}, marker {{c-KIT (CD117)}}; resect to negative margins without lymphadenectomy.",
+   "extra": "Imatinib (tyrosine kinase inhibitor) for high risk: size over 5 cm, high mitotic rate, non-gastric site, or rupture."
+  }
+ },
+ {
+  "id": "q025",
+  "topic": "Small Bowel",
+  "stem": "Pathology after appendectomy shows a 2.5 cm neuroendocrine (carcinoid) tumor at the base of the appendix. Next step?",
+  "choices": [
+   "No further treatment",
+   "Repeat CT in one year",
+   "Octreotide therapy only",
+   "Right hemicolectomy"
+  ],
+  "answer": 3,
+  "explanation": "Appendiceal neuroendocrine tumors over 2 cm, at the base, with mesoappendiceal invasion or positive margins need right hemicolectomy. Tumors under 1 cm at the tip are treated by appendectomy alone.",
+  "card": {
+   "text": "Appendiceal carcinoid over {{2 cm}} or involving the base: {{right hemicolectomy}}.",
+   "extra": "Under 1 cm at the tip: appendectomy is enough. Between 1 and 2 cm: decide on risk features."
+  }
+ },
+ {
+  "id": "q026",
+  "topic": "Colorectal",
+  "stem": "A nursing home resident has a massively distended abdomen and a coffee-bean sign pointing to the right upper quadrant. He has no peritonitis. Best initial management?",
+  "choices": [
+   "Endoscopic detorsion, then sigmoid colectomy during the same admission",
+   "Immediate Hartmann procedure",
+   "Barium enema and discharge",
+   "Neostigmine"
+  ],
+  "answer": 0,
+  "explanation": "Sigmoid volvulus without peritonitis or ischemia is decompressed endoscopically. Recurrence is high, so sigmoid colectomy follows during the same admission. Cecal volvulus goes straight to right colectomy.",
+  "card": {
+   "text": "Sigmoid volvulus without peritonitis: {{endoscopic detorsion}}, then {{sigmoid colectomy}} the same admission.",
+   "extra": "Cecal volvulus is not decompressed endoscopically; treat with right hemicolectomy."
+  }
+ },
+ {
+  "id": "q027",
+  "topic": "Colorectal",
+  "stem": "A 3 cm squamous cell carcinoma of the anal canal is confirmed by biopsy. There are no distant metastases. Treatment?",
+  "choices": [
+   "Chemoradiation with 5-FU and mitomycin C",
+   "Radiation alone",
+   "Wide local excision",
+   "Abdominoperineal resection"
+  ],
+  "answer": 0,
+  "explanation": "Anal canal squamous cell carcinoma is treated with the Nigro protocol: 5-FU, mitomycin C, and radiation. Abdominoperineal resection is salvage for persistent or recurrent disease.",
+  "card": {
+   "text": "Anal canal squamous cell carcinoma: {{Nigro protocol}} (5-FU, mitomycin C, radiation); {{APR}} is for salvage.",
+   "extra": "Associated with HPV 16 and 18. Assess response over up to 6 months before declaring failure."
+  }
+ },
+ {
+  "id": "q028",
+  "topic": "Hepatobiliary",
+  "stem": "A 30-year-old woman on oral contraceptives has a 6 cm hepatic adenoma on MRI. Recommended management?",
+  "choices": [
+   "Resection",
+   "Percutaneous biopsy",
+   "Liver transplant",
+   "Observation only"
+  ],
+  "answer": 0,
+  "explanation": "Hepatic adenomas are linked to estrogen and anabolic steroids and carry risks of rupture with hemorrhage and malignant change. Stop the hormones. Resect adenomas over 5 cm, any adenoma in a man, or beta-catenin mutated lesions.",
+  "card": {
+   "text": "Hepatic adenoma: linked to {{oral contraceptives}}; resect if over {{5 cm}} or in a man.",
+   "extra": "Risks are rupture and malignant transformation. FNH has a central scar and is observed."
+  }
+ },
+ {
+  "id": "q029",
+  "topic": "Hepatobiliary",
+  "stem": "A patient has fever, jaundice, and right upper quadrant pain. He becomes confused and hypotensive despite fluids and antibiotics. Next step?",
+  "choices": [
+   "MRCP in the morning",
+   "Emergent laparoscopic cholecystectomy",
+   "Urgent ERCP with biliary decompression",
+   "HIDA scan"
+  ],
+  "answer": 2,
+  "explanation": "Ascending cholangitis (Charcot's triad; Reynolds' pentad adds shock and confusion) needs resuscitation, antibiotics, and urgent biliary drainage. ERCP is first line; percutaneous transhepatic drainage is the alternative.",
+  "card": {
+   "text": "Cholangitis: Charcot's triad is {{fever, jaundice, RUQ pain}}; treat with antibiotics and urgent {{ERCP}} drainage.",
+   "extra": "Reynolds' pentad adds hypotension and altered mental status."
+  }
+ },
+ {
+  "id": "q030",
+  "topic": "Hepatobiliary",
+  "stem": "Pathology after laparoscopic cholecystectomy shows gallbladder adenocarcinoma invading the muscular layer (T1b). Next step?",
+  "choices": [
+   "No further treatment",
+   "Resection of liver segments IVb and V with portal lymphadenectomy",
+   "Radiation alone",
+   "Whipple procedure"
+  ],
+  "answer": 1,
+  "explanation": "T1a (lamina propria) gallbladder cancer is cured by cholecystectomy. T1b and deeper need re-resection of the gallbladder bed (segments IVb and V) with portal lymphadenectomy.",
+  "card": {
+   "text": "Gallbladder cancer: {{T1a}} needs cholecystectomy only; {{T1b}} or deeper needs segment IVb/V resection plus portal nodes.",
+   "extra": "T1a invades lamina propria; T1b invades muscle. Porcelain gallbladder and polyps over 1 cm raise risk."
+  }
+ },
+ {
+  "id": "q031",
+  "topic": "Pancreas",
+  "stem": "A woman has fasting glucose of 38 mg/dL with confusion relieved by glucose. Insulin and C-peptide are elevated; sulfonylurea screen is negative. A 1.5 cm pancreatic body mass sits away from the main duct. Treatment?",
+  "choices": [
+   "Total pancreatectomy",
+   "Enucleation",
+   "Whipple procedure",
+   "Diazoxide for life"
+  ],
+  "answer": 1,
+  "explanation": "Insulinoma is the most common functional pancreatic neuroendocrine tumor. About 90 percent are benign and solitary, so enucleation is appropriate when the lesion is away from the main duct.",
+  "card": {
+   "text": "Most common functional pancreatic neuroendocrine tumor: {{insulinoma}}; usually benign, treated by {{enucleation}}.",
+   "extra": "Whipple's triad: hypoglycemic symptoms, low glucose, relief with glucose. C-peptide is high (low with exogenous insulin)."
+  }
+ },
+ {
+  "id": "q032",
+  "topic": "Pancreas",
+  "stem": "Three weeks into necrotizing pancreatitis, a patient has fever and gas within a walled-off collection on CT. He is stable on antibiotics. Best approach?",
+  "choices": [
+   "Step-up approach: percutaneous or endoscopic drainage first",
+   "Antibiotics alone with no drainage plan",
+   "Total pancreatectomy",
+   "Immediate open necrosectomy"
+  ],
+  "answer": 0,
+  "explanation": "Infected necrosis is managed with the step-up approach: antibiotics, then percutaneous or endoscopic drainage, and minimally invasive necrosectomy only if needed, ideally delayed about 4 weeks.",
+  "card": {
+   "text": "Infected pancreatic necrosis: {{step-up approach}} (drain first), delaying necrosectomy about {{4 weeks}}.",
+   "extra": "Sterile necrosis is not debrided or given prophylactic antibiotics. Gas in the collection means infection."
+  }
+ },
+ {
+  "id": "q033",
+  "topic": "Spleen",
+  "stem": "A patient undergoes emergency splenectomy for trauma. When should vaccines be given?",
+  "choices": [
+   "Never needed after trauma",
+   "Six months after surgery",
+   "About 14 days after surgery or before discharge",
+   "Intraoperatively only"
+  ],
+  "answer": 2,
+  "explanation": "After splenectomy give vaccines against encapsulated organisms: pneumococcus, meningococcus, and Haemophilus influenzae type b. Timing: 14 days before elective splenectomy, or about 14 days after emergency splenectomy (or at discharge if follow-up is uncertain).",
+  "card": {
+   "text": "Post-splenectomy vaccines: {{pneumococcus, meningococcus, H. influenzae b}}; give {{14 days}} before elective or after emergency surgery.",
+   "extra": "Overwhelming post-splenectomy infection is most often from Streptococcus pneumoniae."
+  }
+ },
+ {
+  "id": "q034",
+  "topic": "Hernia",
+  "stem": "During laparoscopic inguinal hernia repair, a hernia sac is seen lateral to the inferior epigastric vessels. What type is it?",
+  "choices": [
+   "Direct inguinal hernia",
+   "Indirect inguinal hernia",
+   "Obturator hernia",
+   "Femoral hernia"
+  ],
+  "answer": 1,
+  "explanation": "Indirect hernias pass through the internal ring lateral to the inferior epigastric vessels, from a patent processus vaginalis. Direct hernias come through Hesselbach's triangle medial to the vessels.",
+  "card": {
+   "text": "Indirect inguinal hernia is {{lateral}} to the inferior epigastric vessels; direct is {{medial}}.",
+   "extra": "Indirect: patent processus vaginalis, most common hernia in both sexes. Femoral: below the inguinal ligament, medial to the femoral vein."
+  }
+ },
+ {
+  "id": "q035",
+  "topic": "Vascular",
+  "stem": "An asymptomatic 68-year-old man has an infrarenal abdominal aortic aneurysm. At what diameter is elective repair recommended?",
+  "choices": [
+   "5.5 cm",
+   "4.0 cm",
+   "4.5 cm",
+   "6.5 cm"
+  ],
+  "answer": 0,
+  "explanation": "Repair is recommended at 5.5 cm in men and 5.0 cm in women, for growth over 0.5 cm in 6 months, or for any symptomatic aneurysm.",
+  "card": {
+   "text": "Elective AAA repair: {{5.5 cm}} in men, {{5.0 cm}} in women, or rapid growth or symptoms.",
+   "extra": "Rapid growth: more than 0.5 cm in 6 months or 1 cm in a year. Screen men 65 to 75 who ever smoked."
+  }
+ },
+ {
+  "id": "q036",
+  "topic": "Vascular",
+  "stem": "After a carotid endarterectomy, the patient's tongue deviates toward the operated side. Which nerve was injured?",
+  "choices": [
+   "Glossopharyngeal nerve",
+   "Marginal mandibular nerve",
+   "Hypoglossal nerve",
+   "Vagus nerve"
+  ],
+  "answer": 2,
+  "explanation": "The hypoglossal nerve crosses the carotid above the bifurcation; injury makes the tongue deviate toward the injured side. Vagus or recurrent laryngeal injury causes hoarseness; marginal mandibular injury causes lip droop.",
+  "card": {
+   "text": "After carotid endarterectomy, tongue deviation toward the operated side means {{hypoglossal nerve}} injury.",
+   "extra": "Hoarseness: vagus or recurrent laryngeal. Lip droop: marginal mandibular branch of the facial nerve."
+  }
+ },
+ {
+  "id": "q037",
+  "topic": "Vascular",
+  "stem": "Six hours after embolectomy for an acutely ischemic leg, the patient has severe calf pain with passive toe motion and numbness in the first web space. Pulses are palpable. Treatment?",
+  "choices": [
+   "Repeat angiogram",
+   "Elevate the leg and observe",
+   "Heparin drip only",
+   "Four-compartment fasciotomy"
+  ],
+  "answer": 3,
+  "explanation": "Reperfusion compartment syndrome is a clinical diagnosis; pulses are usually preserved. First web space numbness reflects deep peroneal nerve compression in the anterior compartment. Treat with four-compartment fasciotomy.",
+  "card": {
+   "text": "Compartment syndrome: first web space numbness is the {{deep peroneal}} nerve in the {{anterior}} compartment; treat with fasciotomy.",
+   "extra": "Earliest sign is pain with passive stretch. Pulses persist until late. Watch for myoglobinuria and hyperkalemia."
+  }
+ },
+ {
+  "id": "q038",
+  "topic": "Thoracic",
+  "stem": "A 45-year-old with ptosis and fatigable weakness has an anterior mediastinal mass on CT. Most likely diagnosis?",
+  "choices": [
+   "Neurogenic tumor",
+   "Bronchogenic cyst",
+   "Thymoma",
+   "Pericardial cyst"
+  ],
+  "answer": 2,
+  "explanation": "Thymoma is the most common anterior mediastinal tumor in adults and is associated with myasthenia gravis. Treatment is thymectomy. Neurogenic tumors are posterior.",
+  "card": {
+   "text": "Most common anterior mediastinal tumor in adults: {{thymoma}}, associated with {{myasthenia gravis}}.",
+   "extra": "Anterior mass differential: thymoma, teratoma (germ cell), thyroid, lymphoma. Posterior: neurogenic tumors."
+  }
+ },
+ {
+  "id": "q039",
+  "topic": "Pediatric Surgery",
+  "stem": "A 5-week-old boy has projectile non-bilious vomiting. Ultrasound confirms pyloric stenosis. Chloride is 85 and bicarbonate is 36. Next step?",
+  "choices": [
+   "Immediate pyloromyotomy",
+   "Upper GI series",
+   "IV fluid resuscitation and electrolyte correction, then pyloromyotomy",
+   "Trial of thickened feeds"
+  ],
+  "answer": 2,
+  "explanation": "Pyloric stenosis causes hypochloremic, hypokalemic metabolic alkalosis. It is a medical emergency, not a surgical one: correct fluids and electrolytes first because alkalosis risks postoperative apnea.",
+  "card": {
+   "text": "Pyloric stenosis: {{hypochloremic, hypokalemic metabolic alkalosis}}; {{resuscitate first}}, then pyloromyotomy.",
+   "extra": "Ultrasound criteria: muscle thickness of 4 mm or more and channel length of 14 to 16 mm or more."
+  }
+ },
+ {
+  "id": "q040",
+  "topic": "Pediatric Surgery",
+  "stem": "A 10-day-old previously well infant has sudden bilious vomiting. He is stable. Next step?",
+  "choices": [
+   "Abdominal ultrasound for pyloric stenosis",
+   "Upper GI contrast study urgently",
+   "Barium enema next week",
+   "Reassurance and formula change"
+  ],
+  "answer": 1,
+  "explanation": "Bilious emesis in an infant is malrotation with midgut volvulus until proven otherwise. A stable infant gets an urgent upper GI study (duodenojejunal junction fails to cross the midline); an unstable infant goes straight to the operating room for a Ladd procedure.",
+  "card": {
+   "text": "Bilious vomiting in an infant is {{malrotation with midgut volvulus}} until proven otherwise; treatment is the {{Ladd procedure}}.",
+   "extra": "Ladd: detorse counterclockwise, divide Ladd bands, widen the mesentery, appendectomy, small bowel right and colon left."
+  }
+ },
+ {
+  "id": "q041",
+  "topic": "Transplant",
+  "stem": "Minutes after reperfusion, a transplanted kidney turns mottled and cyanotic. What is the mechanism?",
+  "choices": [
+   "T-cell mediated cellular rejection",
+   "Preformed recipient antibodies against the donor",
+   "CMV infection",
+   "Calcineurin inhibitor toxicity"
+  ],
+  "answer": 1,
+  "explanation": "Hyperacute rejection occurs within minutes to hours from preformed antibodies (ABO or HLA) that activate complement and thrombose the graft. It is prevented by crossmatch; treatment is graft removal.",
+  "card": {
+   "text": "Hyperacute rejection: {{preformed antibodies}} (ABO or HLA), within minutes to hours; a type {{II}} hypersensitivity reaction.",
+   "extra": "Acute rejection is T-cell mediated over days to months. Chronic rejection takes months to years."
+  }
+ },
+ {
+  "id": "q042",
+  "topic": "Burns",
+  "stem": "An 80 kg man has 40% TBSA deep partial-thickness burns. Using the Parkland formula, how much lactated Ringer's is given in the first 8 hours after the burn?",
+  "choices": [
+   "3,200 mL",
+   "1,600 mL",
+   "6,400 mL",
+   "12,800 mL"
+  ],
+  "answer": 2,
+  "explanation": "Parkland: 4 mL x kg x %TBSA = 12,800 mL over 24 hours, with half (6,400 mL) in the first 8 hours from the time of the burn. Titrate to urine output. Current ATLS starts adults at 2 mL/kg/%TBSA.",
+  "card": {
+   "text": "Parkland formula: {{4 mL x kg x %TBSA}} of lactated Ringer's; give {{half}} in the first 8 hours from the time of burn.",
+   "extra": "Count only second and third degree burns. Titrate to urine output of 0.5 mL/kg/h in adults."
+  }
+ },
+ {
+  "id": "q043",
+  "topic": "Skin & Soft Tissue",
+  "stem": "A biopsy of a back lesion shows melanoma, Breslow depth 1.5 mm, no palpable nodes. Appropriate surgery?",
+  "choices": [
+   "Wide excision with 1 to 2 cm margins and sentinel lymph node biopsy",
+   "Excision with 5 cm margins and axillary dissection",
+   "Mohs surgery only",
+   "Excision with 0.5 cm margins"
+  ],
+  "answer": 0,
+  "explanation": "Margins by Breslow depth: in situ 0.5 to 1 cm; up to 1 mm, 1 cm; 1 to 2 mm, 1 to 2 cm; over 2 mm, 2 cm. Sentinel node biopsy is recommended for melanomas over 1 mm and considered from 0.8 mm or with ulceration.",
+  "card": {
+   "text": "Melanoma margins: up to 1 mm deep gets {{1 cm}}; over 2 mm gets {{2 cm}}; 1 to 2 mm gets 1 to 2 cm.",
+   "extra": "Sentinel node biopsy for depth over 1 mm, and considered at 0.8 mm or with ulceration."
+  }
+ },
+ {
+  "id": "q044",
+  "topic": "Statistics & Ethics",
+  "stem": "A screening test is applied in a population where the disease becomes much less common. Which value will fall?",
+  "choices": [
+   "Sensitivity",
+   "Specificity",
+   "Positive predictive value",
+   "Negative predictive value"
+  ],
+  "answer": 2,
+  "explanation": "Sensitivity and specificity are properties of the test. Predictive values depend on prevalence: as prevalence falls, positive predictive value falls and negative predictive value rises.",
+  "card": {
+   "text": "As prevalence falls, {{positive predictive value}} falls and {{negative predictive value}} rises.",
+   "extra": "Sensitivity and specificity do not change with prevalence."
+  }
+ },
+ {
+  "id": "q045",
+  "topic": "Head & Neck",
+  "stem": "A 50-year-old has a slow-growing, painless mass in the superficial lobe of the parotid. FNA shows pleomorphic adenoma. Treatment?",
+  "choices": [
+   "Superficial parotidectomy with facial nerve preservation",
+   "Observation",
+   "Enucleation",
+   "Radiation alone"
+  ],
+  "answer": 0,
+  "explanation": "Pleomorphic adenoma is the most common salivary gland tumor. Enucleation leads to recurrence, and there is a risk of malignant change, so treatment is superficial parotidectomy preserving the facial nerve.",
+  "card": {
+   "text": "Most common salivary tumor: {{pleomorphic adenoma}}; treat with {{superficial parotidectomy}}, not enucleation.",
+   "extra": "Most common malignant salivary tumor: mucoepidermoid carcinoma. Warthin's tumor: older male smokers, can be bilateral."
+  }
+ },
+ {
+  "id": "q046",
+  "topic": "Oncology",
+  "stem": "A 28-year-old woman with breast cancer has a brother who had osteosarcoma and a mother with adrenocortical carcinoma. Which gene is most likely mutated?",
+  "choices": [
+   "TP53",
+   "VHL",
+   "APC",
+   "RET"
+  ],
+  "answer": 0,
+  "explanation": "Li-Fraumeni syndrome is a germline TP53 mutation causing sarcomas, early breast cancer, brain tumors, adrenocortical carcinoma, and leukemia.",
+  "card": {
+   "text": "Li-Fraumeni syndrome: germline {{TP53}} mutation; sarcoma, breast, brain, {{adrenocortical}} carcinoma, leukemia.",
+   "extra": "p53 is a tumor suppressor on chromosome 17 that regulates the cell cycle and apoptosis."
+  }
+ }
+]
