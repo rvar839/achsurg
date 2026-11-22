@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.vibgen.absite"],
+        "components": [{ "/": "/*", "comment": "All paths open in the app" }]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TEAMID.com.vibgen.absite"]
+  }
+}
