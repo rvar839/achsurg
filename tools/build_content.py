@@ -57,8 +57,11 @@ def main():
     unknown = {q["topic"] for q in questions} - set(CARDS)
     assert not unknown, f"question topics without cards: {unknown}"
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "questions.json").write_text(json.dumps(questions, indent=1, ensure_ascii=False) + "\n")
-    (OUT / "cards.json").write_text(json.dumps(cards, indent=1, ensure_ascii=False) + "\n")
+    # Same content ships in the iPhone app and the web app.
+    for folder in (OUT, OUT.parents[2] / "web" / "content"):
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "questions.json").write_text(json.dumps(questions, indent=1, ensure_ascii=False) + "\n")
+        (folder / "cards.json").write_text(json.dumps(cards, indent=1, ensure_ascii=False) + "\n")
     positions = [q["answer"] for q in questions]
     print(f"{len(questions)} questions, {len(cards)} cards, {len(CARDS)} topics")
     print("answer positions:", {p: positions.count(p) for p in sorted(set(positions))})

@@ -10,7 +10,7 @@ Three connected parts: a **Qbank** (random questions with explanations), **Flash
 | UI | SwiftUI, `@Observable` |
 | Bundle ID | `com.vibgen.absite` |
 | Project | Generated with [XcodeGen](https://github.com/yonaskolb/XcodeGen) from `project.yml` |
-| Website | Static site in `web/`, deployed by GitHub Pages to `absite.vibgen.com` |
+| Website | Web app in `web/` (same content and logic as the iPhone app), deployed by GitHub Pages to `absite.vibgen.com` |
 
 ## Getting started (Mac)
 
