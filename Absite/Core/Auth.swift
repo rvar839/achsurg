@@ -19,6 +19,10 @@ enum Auth {
                     passcodeHash: "368c0eafc2fbd8da7ea98c0d0429b1e3292c4ef7914eeb6e47a11fa1c26b184d"),
         UserAccount(name: "Rahul",
                     passcodeHash: "45878fb4be730f671a50907dcdc8c4f78a5ea05cc4b586d98200e55c274c6f84"),
+        UserAccount(name: "Meera",
+                    passcodeHash: "9367fb73c9f1d87053a4e03c77c288b804df94197be67706401a2751aa4bc496"),
+        UserAccount(name: "Pooja",
+                    passcodeHash: "130400b0812eda744d8376680827ebb819dbe1103fd9241dd5bb9140f7c1c57d"),
     ]
 
     static func hash(_ passcode: String) -> String {

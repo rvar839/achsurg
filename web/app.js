@@ -5,7 +5,9 @@
   var USERS = [
     { name: 'Achi', hash: 'c7349cb0d25b2d0c27f7f896c67b605fc51e207205db15c50cca2818448354d0' },
     { name: 'Mahe', hash: '368c0eafc2fbd8da7ea98c0d0429b1e3292c4ef7914eeb6e47a11fa1c26b184d' },
-    { name: 'Rahul', hash: '45878fb4be730f671a50907dcdc8c4f78a5ea05cc4b586d98200e55c274c6f84' }
+    { name: 'Rahul', hash: '45878fb4be730f671a50907dcdc8c4f78a5ea05cc4b586d98200e55c274c6f84' },
+    { name: 'Meera', hash: '9367fb73c9f1d87053a4e03c77c288b804df94197be67706401a2751aa4bc496' },
+    { name: 'Pooja', hash: '130400b0812eda744d8376680827ebb819dbe1103fd9241dd5bb9140f7c1c57d' }
   ];
   var NEW_PER_BATCH = 20;
   var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
