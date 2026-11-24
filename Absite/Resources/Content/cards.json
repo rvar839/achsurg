@@ -2,6 +2,7 @@
  {
   "id": "trauma-001",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Intubate for a GCS of {{8}} or less.",
   "extra": "GCS: eyes 4, verbal 5, motor 6. Motor score is the most prognostic.",
   "points": [
@@ -11,6 +12,7 @@
  {
   "id": "trauma-002",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Beck's triad of tamponade: {{hypotension}}, {{JVD}}, and {{muffled heart sounds}}.",
   "extra": "Treat with pericardial window or sternotomy; pericardiocentesis only temporizes.",
   "points": [
@@ -20,6 +22,7 @@
  {
   "id": "trauma-003",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Neck zone II runs from the {{cricoid cartilage}} to the {{angle of the mandible}}.",
   "extra": "Zone I: clavicle to cricoid. Zone III: angle of mandible to skull base.",
   "points": [
@@ -30,6 +33,7 @@
  {
   "id": "trauma-004",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Blunt aortic injury occurs most often at the {{ligamentum arteriosum}}, just distal to the left subclavian.",
   "extra": "Treat with impulse control (beta blocker) and then TEVAR.",
   "points": [
@@ -39,6 +43,7 @@
  {
   "id": "trauma-005",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "The lethal triad in trauma: {{hypothermia}}, {{acidosis}}, {{coagulopathy}}.",
   "extra": "Basis for damage control surgery: control bleeding and contamination, resuscitate, return later.",
   "points": [
@@ -48,6 +53,7 @@
  {
   "id": "trauma-006",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Massive transfusion targets a plasma:platelet:RBC ratio of {{1:1:1}}.",
   "extra": "Balanced resuscitation reduces death from exsanguination (PROPPR).",
   "points": [
@@ -57,6 +63,7 @@
  {
   "id": "trauma-007",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Posterior knee dislocation: evaluate the {{popliteal artery}}; an ABI under {{0.9}} needs CT angiography.",
   "extra": "Hard signs of vascular injury go to the operating room.",
   "points": [
@@ -66,6 +73,7 @@
  {
   "id": "trauma-008",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Epidural hematoma: {{middle meningeal artery}}, lens shaped, lucid interval.",
   "extra": "Subdural hematoma: bridging veins, crescent shaped, crosses suture lines.",
   "points": [
@@ -75,6 +83,7 @@
  {
   "id": "trauma-009",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Cushing's reflex: {{hypertension}} and {{bradycardia}} with irregular breathing.",
   "extra": "A sign of raised intracranial pressure and impending herniation.",
   "points": [
@@ -84,6 +93,7 @@
  {
   "id": "trauma-010",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Blood at the urethral meatus: get a {{retrograde urethrogram}} before placing a Foley.",
   "extra": "Other signs: high-riding prostate, perineal hematoma, pelvic fracture.",
   "points": [
@@ -93,6 +103,7 @@
  {
   "id": "trauma-011",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Seat belt sign with a Chance fracture suggests {{small bowel or mesenteric}} injury.",
   "extra": "A Chance fracture is a flexion-distraction injury of the thoracolumbar spine.",
   "points": [
@@ -102,6 +113,7 @@
  {
   "id": "trauma-012",
   "topic": "Trauma",
+  "score": "Trauma",
   "text": "Neurogenic shock: hypotension with {{bradycardia}} and warm extremities.",
   "extra": "Loss of sympathetic tone from injury above T6. Treat with fluids then vasopressors.",
   "points": [
@@ -112,6 +124,7 @@
  {
   "id": "critical-care-001",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "Cardiogenic shock: cardiac output {{low}}, wedge pressure {{high}}, SVR {{high}}.",
   "extra": "Hypovolemic shock: low output, low wedge, high SVR.",
   "points": [
@@ -121,6 +134,7 @@
  {
   "id": "critical-care-002",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "Septic shock (early): cardiac output {{high}}, SVR {{low}}.",
   "extra": "Distributive shock. Mixed venous saturation is often high.",
   "points": [
@@ -131,6 +145,7 @@
  {
   "id": "critical-care-003",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "ARDS (Berlin): PaO2/FiO2 under {{300}}, bilateral infiltrates, within one week, not cardiac.",
   "extra": "Mild 200 to 300, moderate 100 to 200, severe under 100.",
   "points": [
@@ -140,6 +155,7 @@
  {
   "id": "critical-care-004",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "Prone positioning improves survival in ARDS when P/F is under {{150}}.",
   "extra": "Prone for at least 16 hours per day (PROSEVA).",
   "points": [
@@ -149,6 +165,7 @@
  {
   "id": "critical-care-005",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "Vasopressin vasoconstricts through {{V1}} receptors; {{V2}} receptors reabsorb water in the collecting duct.",
   "extra": "DDAVP is V2 selective and releases vWF and factor VIII.",
   "points": [
@@ -158,6 +175,7 @@
  {
   "id": "critical-care-006",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "Refractory hypotension in a patient on chronic steroids: give {{hydrocortisone}}.",
   "extra": "Adrenal insufficiency: hypotension, hyponatremia, hyperkalemia, hypoglycemia.",
   "points": [
@@ -167,6 +185,7 @@
  {
   "id": "critical-care-007",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "text": "One gram of hemoglobin carries {{1.34}} mL of oxygen.",
   "extra": "O2 content = Hgb x 1.34 x SaO2 + 0.003 x PaO2. Delivery = cardiac output x content.",
   "points": [
@@ -177,6 +196,7 @@
  {
   "id": "critical-care-008",
   "topic": "Critical Care",
+  "score": "Preoperative Evaluation and Perioperative Care",
   "text": "Most common cause of fever in the first 48 hours after surgery (classic teaching): {{atelectasis}}.",
   "extra": "Wind, water, wound, walking, wonder drugs. Very early high fever with wound changes: think necrotizing infection.",
   "points": [
@@ -187,6 +207,7 @@
  {
   "id": "fluids-electrolytes-001",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Total body water is about {{60}}% of body weight in men: 2/3 intracellular, 1/3 extracellular.",
   "extra": "Extracellular: 3/4 interstitial, 1/4 plasma.",
   "points": [
@@ -196,6 +217,7 @@
  {
   "id": "fluids-electrolytes-002",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Lactated Ringer's contains sodium {{130}}, potassium 4, calcium 2.7, chloride 109, lactate 28.",
   "extra": "Normal saline: sodium 154, chloride 154.",
   "points": [
@@ -205,6 +227,7 @@
  {
   "id": "fluids-electrolytes-003",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Large volumes of normal saline cause {{hyperchloremic non-anion-gap metabolic acidosis}}.",
   "extra": "Use balanced crystalloids for large-volume resuscitation.",
   "points": [
@@ -214,6 +237,7 @@
  {
   "id": "fluids-electrolytes-004",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Correct chronic hyponatremia no faster than {{8}} to 10 mEq/L per 24 hours.",
   "extra": "Too fast causes osmotic demyelination. Correcting hypernatremia too fast causes cerebral edema.",
   "points": [
@@ -224,6 +248,7 @@
  {
   "id": "fluids-electrolytes-005",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Refractory hypokalemia: first correct {{magnesium}}.",
   "extra": "Low magnesium also causes refractory hypocalcemia.",
   "points": [
@@ -233,6 +258,7 @@
  {
   "id": "fluids-electrolytes-006",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "First treatment of hypercalcemic crisis: {{normal saline}} hydration.",
   "extra": "Then calcitonin and bisphosphonates. Avoid thiazides.",
   "points": [
@@ -243,6 +269,7 @@
  {
   "id": "fluids-electrolytes-007",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Maintenance fluids by the 4-2-1 rule: {{4}} mL/kg/h for the first 10 kg, 2 for the next 10, 1 thereafter.",
   "extra": "A 70 kg adult needs about 110 mL/h.",
   "points": [
@@ -252,6 +279,7 @@
  {
   "id": "fluids-electrolytes-008",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "Vomiting or NG suction causes {{hypochloremic, hypokalemic metabolic alkalosis}} with paradoxical aciduria.",
   "extra": "Treat with normal saline and potassium.",
   "points": [
@@ -261,6 +289,7 @@
  {
   "id": "fluids-electrolytes-009",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "text": "The GI fluid with the most potassium is {{saliva}}; the most bicarbonate is {{pancreatic fluid}}.",
   "extra": "High-output pancreatic or small bowel fistulas cause non-gap acidosis.",
   "points": [
@@ -270,6 +299,7 @@
  {
   "id": "nutrition-001",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "text": "Calories per gram: fat {{9}}, protein 4, carbohydrate 4.",
   "extra": "IV dextrose gives 3.4 kcal/g.",
   "points": [
@@ -279,6 +309,7 @@
  {
   "id": "nutrition-002",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "text": "A respiratory quotient above 1 means {{overfeeding}}; 0.7 means fat use or starvation.",
   "extra": "Overfeeding raises CO2 production and can impair ventilator weaning.",
   "points": [
@@ -288,6 +319,7 @@
  {
   "id": "nutrition-003",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "text": "Fuel of the colonocyte: {{short-chain fatty acids (butyrate)}}; fuel of the enterocyte: {{glutamine}}.",
   "extra": "Diversion colitis is treated with short-chain fatty acid enemas.",
   "points": [
@@ -297,6 +329,7 @@
  {
   "id": "nutrition-004",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "text": "Half-life of prealbumin: {{2 days}}; albumin: about 20 days.",
   "extra": "Prealbumin tracks short-term nutritional change.",
   "points": [
@@ -306,6 +339,7 @@
  {
   "id": "nutrition-005",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "text": "Chromium deficiency causes {{hyperglycemia}} and neuropathy.",
   "extra": "Zinc deficiency: poor wound healing, rash, hair loss. Copper: pancytopenia.",
   "points": [
@@ -316,6 +350,7 @@
  {
   "id": "nutrition-006",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "text": "Zinc deficiency causes {{poor wound healing}}, perioral rash, and hair loss.",
   "extra": "Common with high-output fistulas and long-term TPN.",
   "points": [
@@ -325,6 +360,7 @@
  {
   "id": "hematology-001",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Hemophilia A is deficiency of factor {{VIII}}; it prolongs the {{PTT}}.",
   "extra": "X-linked. Hemophilia B is factor IX. Hemarthrosis is typical.",
   "points": [
@@ -336,6 +372,7 @@
  {
   "id": "hematology-002",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "The clotting factor with the shortest half-life is factor {{VII}}.",
   "extra": "This is why PT/INR rises first in liver failure and with warfarin.",
   "points": [
@@ -345,6 +382,7 @@
  {
   "id": "hematology-003",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Vitamin K-dependent factors: {{II, VII, IX, X}}, plus proteins C and S.",
   "extra": "Warfarin blocks vitamin K epoxide reductase.",
   "points": [
@@ -354,6 +392,7 @@
  {
   "id": "hematology-004",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Most common inherited hypercoagulable state: {{factor V Leiden}}.",
   "extra": "It causes resistance to activated protein C.",
   "points": [
@@ -363,6 +402,7 @@
  {
   "id": "hematology-005",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Cryoprecipitate is rich in {{fibrinogen}}, factor VIII, vWF, and factor XIII.",
   "extra": "Give for fibrinogen under 100 to 150 in a bleeding patient.",
   "points": [
@@ -372,6 +412,7 @@
  {
   "id": "hematology-006",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Uremic platelet dysfunction is treated with {{DDAVP}}.",
   "extra": "Dialysis also helps. Platelet count is normal; function is impaired.",
   "points": [
@@ -382,6 +423,7 @@
  {
   "id": "hematology-007",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Heparin potentiates {{antithrombin III}} and is reversed with {{protamine}}.",
   "extra": "1 mg protamine per 100 units of heparin. Protamine reverses LMWH only partly.",
   "points": [
@@ -392,6 +434,7 @@
  {
   "id": "hematology-008",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "Warfarin skin necrosis occurs with {{protein C}} deficiency.",
   "extra": "Protein C has a short half-life, causing a transient hypercoagulable state. Bridge with heparin.",
   "points": [
@@ -402,6 +445,7 @@
  {
   "id": "hematology-009",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "text": "TRALI is caused by {{donor antibodies}} against recipient leukocytes.",
   "extra": "Non-cardiogenic pulmonary edema within 6 hours of transfusion. Supportive care.",
   "points": [
@@ -412,6 +456,7 @@
  {
   "id": "infection-001",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Most common organism in surgical site infection: {{Staphylococcus aureus}}.",
   "extra": "Most common gram-negative in SSI: E. coli.",
   "points": [
@@ -421,6 +466,7 @@
  {
   "id": "infection-002",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Prophylactic antibiotics are given within {{60 minutes}} before incision.",
   "extra": "Stop within 24 hours. Redose for long cases or major blood loss.",
   "points": [
@@ -431,6 +477,7 @@
  {
   "id": "infection-003",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Most common organism in central line infection: {{coagulase-negative staphylococci}}.",
   "extra": "Staph epidermidis. Remove the line for S. aureus, Candida, or sepsis.",
   "points": [
@@ -441,6 +488,7 @@
  {
   "id": "infection-004",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Clindamycin is added in toxin-mediated infections because it {{inhibits toxin synthesis}}.",
   "extra": "It blocks the 50S ribosome. Used with penicillin for group A strep and Clostridium.",
   "points": [
@@ -451,6 +499,7 @@
  {
   "id": "infection-005",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Candidemia: start an {{echinocandin}}, remove central lines, and get an eye exam.",
   "extra": "Micafungin or caspofungin. Treat for 14 days after the first negative culture.",
   "points": [
@@ -461,6 +510,7 @@
  {
   "id": "infection-006",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Elective colectomy with no spillage is a {{clean-contaminated}} wound.",
   "extra": "Approximate infection rates: clean 2%, clean-contaminated 3 to 5%, contaminated 5 to 10%, dirty 30%.",
   "points": [
@@ -470,6 +520,7 @@
  {
   "id": "infection-007",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "text": "Vancomycin binds {{D-ala-D-ala}} cell wall precursors.",
   "extra": "VRE changes the target to D-ala-D-lac; treat with linezolid or daptomycin.",
   "points": [
@@ -479,6 +530,7 @@
  {
   "id": "anesthesia-pharmacology-001",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "text": "Malignant hyperthermia is a defect of the {{ryanodine receptor}}.",
   "extra": "Triggers: succinylcholine and volatile anesthetics. Treat with dantrolene.",
   "points": [
@@ -489,6 +541,7 @@
  {
   "id": "anesthesia-pharmacology-002",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "text": "Succinylcholine is avoided in burns, crush injury, and denervation because of {{hyperkalemia}}.",
   "extra": "It is the only depolarizing muscle relaxant. Also a trigger for malignant hyperthermia.",
   "points": [
@@ -499,6 +552,7 @@
  {
   "id": "anesthesia-pharmacology-003",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "text": "A lower MAC means a {{more}} potent inhaled anesthetic.",
   "extra": "MAC is the alveolar concentration at which 50% of patients do not move to incision.",
   "points": [
@@ -508,6 +562,7 @@
  {
   "id": "anesthesia-pharmacology-004",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "text": "Etomidate's main drawback is {{adrenal suppression}}.",
   "extra": "Ketamine preserves blood pressure and bronchodilates. Propofol causes hypotension.",
   "points": [
@@ -518,6 +573,7 @@
  {
   "id": "anesthesia-pharmacology-005",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "text": "Maximum lidocaine dose: {{5}} mg/kg plain, {{7}} mg/kg with epinephrine.",
   "extra": "1% lidocaine is 10 mg/mL. Toxicity: perioral numbness, seizures, arrhythmia. Treat with lipid emulsion.",
   "points": [
@@ -529,6 +585,7 @@
  {
   "id": "anesthesia-pharmacology-006",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "text": "Local anesthetics work poorly in infected tissue because of {{acidosis}}.",
   "extra": "The ionized form cannot cross the nerve membrane.",
   "points": [
@@ -538,6 +595,7 @@
  {
   "id": "anesthesia-pharmacology-007",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Pharmacology",
   "text": "Meperidine's metabolite {{normeperidine}} causes seizures.",
   "extra": "It accumulates in renal failure. Avoid with MAO inhibitors.",
   "points": [
@@ -548,6 +606,7 @@
  {
   "id": "wound-healing-001",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "Order of cell arrival in a wound: platelets, {{neutrophils}}, {{macrophages}}, fibroblasts.",
   "extra": "Macrophages are essential. Fibroblasts dominate by day 5.",
   "points": [
@@ -558,6 +617,7 @@
  {
   "id": "wound-healing-002",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "A wound reaches at most {{80%}} of original tensile strength, at about {{8 weeks}}.",
   "extra": "Remodeling continues for a year.",
   "points": [
@@ -567,6 +627,7 @@
  {
   "id": "wound-healing-003",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "Early wound collagen is type {{III}}; it is replaced by type {{I}}.",
   "extra": "Type I is the most abundant collagen. Type IV is basement membrane.",
   "points": [
@@ -577,6 +638,7 @@
  {
   "id": "wound-healing-004",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "Vitamin {{C}} is needed for hydroxylation of proline and lysine in collagen.",
   "extra": "Deficiency causes scurvy and poor wound healing.",
   "points": [
@@ -586,6 +648,7 @@
  {
   "id": "wound-healing-005",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "Vitamin {{A}} reverses the effect of steroids on wound healing.",
   "extra": "Steroids inhibit macrophages and collagen synthesis.",
   "points": [
@@ -595,6 +658,7 @@
  {
   "id": "wound-healing-006",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "The strength layer of the bowel wall is the {{submucosa}}.",
   "extra": "It holds the most collagen. Anastomoses are weakest at days 3 to 5.",
   "points": [
@@ -605,6 +669,7 @@
  {
   "id": "wound-healing-007",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "A keloid extends {{beyond}} the original wound; a hypertrophic scar stays within it.",
   "extra": "Keloids: darker skin, autosomal dominant. Treat with steroid injection, silicone, radiation.",
   "points": [
@@ -615,6 +680,7 @@
  {
   "id": "wound-healing-008",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "text": "Wound contraction is driven by {{myofibroblasts}}.",
   "extra": "Epithelialization proceeds at 1 to 2 mm per day.",
   "points": [
@@ -624,6 +690,7 @@
  {
   "id": "breast-001",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Most common breast mass in women under 30: {{fibroadenoma}}.",
   "extra": "Mobile, rubbery, well circumscribed. Popcorn calcifications when old.",
   "points": [
@@ -634,6 +701,7 @@
  {
   "id": "breast-002",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Most common cause of bloody nipple discharge: {{intraductal papilloma}}.",
   "extra": "Still exclude cancer. Treat with duct excision.",
   "points": [
@@ -644,6 +712,7 @@
  {
   "id": "breast-003",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Long thoracic nerve injury causes {{winged scapula}}.",
   "extra": "It supplies serratus anterior. Thoracodorsal nerve supplies latissimus dorsi.",
   "points": [
@@ -654,6 +723,7 @@
  {
   "id": "breast-004",
   "topic": "Breast",
+  "score": "Breast",
   "text": "The nerve most often injured in axillary dissection is the {{intercostobrachial}} nerve.",
   "extra": "It causes numbness of the medial upper arm.",
   "points": [
@@ -663,6 +733,7 @@
  {
   "id": "breast-005",
   "topic": "Breast",
+  "score": "Breast",
   "text": "BRCA1 raises the risk of breast and {{ovarian}} cancer; BRCA2 adds {{male breast}} cancer.",
   "extra": "BRCA2 also raises pancreatic and prostate cancer risk.",
   "points": [
@@ -672,6 +743,7 @@
  {
   "id": "breast-006",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Tamoxifen raises the risk of {{endometrial cancer}} and venous thromboembolism.",
   "extra": "Aromatase inhibitors are for postmenopausal women and cause bone loss.",
   "points": [
@@ -681,6 +753,7 @@
  {
   "id": "breast-007",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Trastuzumab's key toxicity is {{cardiotoxicity}}.",
   "extra": "Targets HER2. Usually reversible. Monitor with echocardiography.",
   "points": [
@@ -692,6 +765,7 @@
  {
   "id": "breast-008",
   "topic": "Breast",
+  "score": "Breast",
   "text": "LCIS is a {{marker of risk in both breasts}}, not a lesion needing negative margins.",
   "extra": "Manage with surveillance and chemoprevention. Pleomorphic LCIS is excised.",
   "points": [
@@ -702,6 +776,7 @@
  {
   "id": "breast-009",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Inflammatory breast cancer: {{neoadjuvant chemotherapy}}, then modified radical mastectomy, then radiation.",
   "extra": "Peau d'orange from dermal lymphatic invasion. Staged T4d.",
   "points": [
@@ -712,6 +787,7 @@
  {
   "id": "breast-010",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Phyllodes tumor: wide excision with margins of at least {{1 cm}}; no node sampling.",
   "extra": "Spreads by blood, not lymphatics.",
   "points": [
@@ -721,6 +797,7 @@
  {
   "id": "breast-011",
   "topic": "Breast",
+  "score": "Breast",
   "text": "Paget's disease of the nipple signals underlying {{DCIS or invasive cancer}}.",
   "extra": "Scaly, eczematous nipple. Diagnose with full-thickness biopsy.",
   "points": [
@@ -731,6 +808,7 @@
  {
   "id": "endocrine-001",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Most common thyroid cancer: {{papillary}}; it spreads by {{lymphatics}}.",
   "extra": "Psammoma bodies, Orphan Annie nuclei. Excellent prognosis.",
   "points": [
@@ -741,6 +819,7 @@
  {
   "id": "endocrine-002",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Follicular thyroid cancer spreads {{hematogenously}} and cannot be diagnosed by FNA.",
   "extra": "Diagnosis needs capsular or vascular invasion on histology.",
   "points": [
@@ -750,6 +829,7 @@
  {
   "id": "endocrine-003",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Medullary thyroid cancer arises from {{parafollicular C cells}} and secretes calcitonin.",
   "extra": "Amyloid on pathology. Associated with MEN2A and 2B (RET).",
   "points": [
@@ -760,6 +840,7 @@
  {
   "id": "endocrine-004",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "MEN1: {{parathyroid, pancreas, pituitary}}.",
   "extra": "Menin gene. Parathyroid hyperplasia is the most common and first manifestation.",
   "points": [
@@ -770,6 +851,7 @@
  {
   "id": "endocrine-005",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "MEN2A: medullary thyroid cancer, {{pheochromocytoma}}, and {{parathyroid hyperplasia}}.",
   "extra": "MEN2B: medullary thyroid cancer, pheochromocytoma, mucosal neuromas, marfanoid habitus. Both RET.",
   "points": [
@@ -780,6 +862,7 @@
  {
   "id": "endocrine-006",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Injury to the external branch of the superior laryngeal nerve causes loss of {{high pitch}} and voice fatigue.",
   "extra": "It supplies cricothyroid and runs with the superior thyroid artery.",
   "points": [
@@ -789,6 +872,7 @@
  {
   "id": "endocrine-007",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Intraoperative PTH should fall by at least {{50}}% ten minutes after excision.",
   "extra": "Miami criterion. PTH half-life is 3 to 5 minutes.",
   "points": [
@@ -799,6 +883,7 @@
  {
   "id": "endocrine-008",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Most common cause of primary hyperparathyroidism: {{single adenoma}}.",
   "extra": "About 85%. Hyperplasia about 10 to 15%, carcinoma under 1%.",
   "points": [
@@ -809,6 +894,7 @@
  {
   "id": "endocrine-009",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Screening test for primary hyperaldosteronism: {{aldosterone-to-renin ratio}}.",
   "extra": "Conn's: hypertension and hypokalemia. Adrenal vein sampling lateralizes before surgery.",
   "points": [
@@ -819,6 +905,7 @@
  {
   "id": "endocrine-010",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Biochemical test for pheochromocytoma: {{plasma free metanephrines}}.",
   "extra": "Or 24-hour urine metanephrines. Do not biopsy.",
   "points": [
@@ -829,6 +916,7 @@
  {
   "id": "endocrine-011",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "text": "Resect an adrenal incidentaloma if it is {{functional}} or larger than {{4 cm}}.",
   "extra": "Work-up: metanephrines, dexamethasone suppression test, aldosterone:renin if hypertensive.",
   "points": [
@@ -838,6 +926,7 @@
  {
   "id": "esophagus-001",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "text": "Barrett's esophagus is intestinal metaplasia and predisposes to {{adenocarcinoma}}.",
   "extra": "Goblet cells on biopsy. High-grade dysplasia: endoscopic ablation or resection.",
   "points": [
@@ -848,6 +937,7 @@
  {
   "id": "esophagus-002",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "text": "The esophagus has no {{serosa}}.",
   "extra": "This makes anastomoses less secure and lets tumors spread early.",
   "points": [
@@ -857,6 +947,7 @@
  {
   "id": "esophagus-003",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "text": "Boerhaave's perforation is usually in the {{left posterolateral distal}} esophagus.",
   "extra": "Most common site of iatrogenic perforation: at the cricopharyngeus.",
   "points": [
@@ -866,6 +957,7 @@
  {
   "id": "esophagus-004",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "text": "The gastric conduit after esophagectomy is supplied by the {{right gastroepiploic artery}}.",
   "extra": "The left gastric and short gastrics are divided.",
   "points": [
@@ -875,6 +967,7 @@
  {
   "id": "esophagus-005",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "text": "Alkali ingestion causes {{liquefactive}} necrosis; acid causes coagulative necrosis.",
   "extra": "Alkali injury is deeper. No NG tube blindly, no neutralizing, no induced vomiting.",
   "points": [
@@ -885,6 +978,7 @@
  {
   "id": "esophagus-006",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "text": "Type II paraesophageal hernia: GE junction {{in normal position}} with the fundus herniated.",
   "extra": "Type I sliding (most common). Type III mixed. Type IV contains other organs.",
   "points": [
@@ -896,6 +990,7 @@
  {
   "id": "stomach-001",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "Type I gastric ulcer is on the {{lesser curvature}} with normal or low acid.",
   "extra": "Types II (with duodenal ulcer) and III (prepyloric) have high acid.",
   "points": [
@@ -905,6 +1000,7 @@
  {
   "id": "stomach-002",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "Parietal cells secrete {{acid and intrinsic factor}}; chief cells secrete pepsinogen.",
   "extra": "G cells in the antrum secrete gastrin. D cells secrete somatostatin.",
   "points": [
@@ -915,6 +1011,7 @@
  {
   "id": "stomach-003",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "First treatment of dumping syndrome: {{dietary change}}.",
   "extra": "Small, low-carbohydrate, high-protein meals; separate liquids. Octreotide if refractory.",
   "points": [
@@ -925,6 +1022,7 @@
  {
   "id": "stomach-004",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "First-line treatment of gastric MALT lymphoma: {{H. pylori eradication}}.",
   "extra": "Most low-grade lesions regress with triple therapy.",
   "points": [
@@ -934,6 +1032,7 @@
  {
   "id": "stomach-005",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "Gastric cancer resection should retrieve at least {{16}} lymph nodes.",
   "extra": "D2 lymphadenectomy with negative margins. Perioperative chemotherapy (FLOT) for locally advanced disease.",
   "points": [
@@ -944,6 +1043,7 @@
  {
   "id": "stomach-006",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "Left supraclavicular node from gastric cancer: {{Virchow's node}}.",
   "extra": "Krukenberg: ovary. Sister Mary Joseph: umbilicus. Blumer's shelf: rectal shelf.",
   "points": [
@@ -955,6 +1055,7 @@
  {
   "id": "stomach-007",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "text": "Internal hernia after Roux-en-Y bypass occurs through {{Petersen's space}} or the mesenteric defects.",
   "extra": "Swirl sign on CT. Explore early.",
   "points": [
@@ -965,6 +1066,7 @@
  {
   "id": "small-bowel-001",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "text": "Most common cause of small bowel obstruction in adults with prior surgery: {{adhesions}}.",
   "extra": "Without prior surgery: hernia. Then tumors.",
   "points": [
@@ -975,6 +1077,7 @@
  {
   "id": "small-bowel-002",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "text": "Vitamin B12 and bile salts are absorbed in the {{terminal ileum}}.",
   "extra": "Iron: duodenum. Folate: jejunum.",
   "points": [
@@ -985,6 +1088,7 @@
  {
   "id": "small-bowel-003",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "text": "Meckel's diverticulum in children most often presents with {{painless lower GI bleeding}}.",
   "extra": "Ectopic gastric mucosa. In adults: obstruction. True diverticulum from the vitelline duct.",
   "points": [
@@ -996,6 +1100,7 @@
  {
   "id": "small-bowel-004",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "text": "Crohn's disease most commonly involves the {{terminal ileum}}.",
   "extra": "Transmural, skip lesions, creeping fat. Resect only to grossly normal margins.",
   "points": [
@@ -1006,6 +1111,7 @@
  {
   "id": "small-bowel-005",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "text": "Carcinoid syndrome from a gut primary requires {{liver metastases}}.",
   "extra": "Flushing, diarrhea, right-sided valve disease. Urine 5-HIAA. Treat with octreotide.",
   "points": [
@@ -1017,6 +1123,7 @@
  {
   "id": "small-bowel-006",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "text": "In gallstone ileus the stone lodges in the {{terminal ileum}}.",
   "extra": "Pneumobilia on imaging. Remove the stone through a proximal enterotomy.",
   "points": [
@@ -1027,6 +1134,7 @@
  {
   "id": "colorectal-001",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Colon cancer resection requires at least {{12}} lymph nodes.",
   "extra": "Fewer nodes means inadequate staging.",
   "points": [
@@ -1036,6 +1144,7 @@
  {
   "id": "colorectal-002",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Average-risk colorectal cancer screening starts at age {{45}}.",
   "extra": "First-degree relative: start at 40 or 10 years before their diagnosis.",
   "points": [
@@ -1045,6 +1154,7 @@
  {
   "id": "colorectal-003",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Lynch syndrome is caused by {{mismatch repair}} gene mutations.",
   "extra": "MLH1, MSH2, MSH6, PMS2. Microsatellite instability. Endometrial cancer is the most common extracolonic tumor.",
   "points": [
@@ -1056,6 +1166,7 @@
  {
   "id": "colorectal-004",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "FAP is caused by the {{APC}} gene on chromosome 5q.",
   "extra": "Near 100% cancer risk. Also duodenal cancer and desmoid tumors.",
   "points": [
@@ -1066,6 +1177,7 @@
  {
   "id": "colorectal-005",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "The watershed area most prone to colonic ischemia is the {{splenic flexure}}.",
   "extra": "Griffith's point. Sudeck's point is at the rectosigmoid.",
   "points": [
@@ -1076,6 +1188,7 @@
  {
   "id": "colorectal-006",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Ogilvie's syndrome failing conservative care or with cecum over {{12 cm}}: give {{neostigmine}}.",
   "extra": "Monitor for bradycardia and keep atropine ready. Then colonoscopic decompression.",
   "points": [
@@ -1086,6 +1199,7 @@
  {
   "id": "colorectal-007",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Hinchey III is {{purulent}} peritonitis; Hinchey IV is {{feculent}} peritonitis.",
   "extra": "I: pericolic abscess. II: pelvic or distant abscess.",
   "points": [
@@ -1096,6 +1210,7 @@
  {
   "id": "colorectal-008",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Anorectal",
   "text": "Chronic anal fissure is usually in the {{posterior midline}}; surgery is lateral internal sphincterotomy.",
   "extra": "A lateral fissure suggests Crohn's, HIV, syphilis, TB, or cancer.",
   "points": [
@@ -1105,6 +1220,7 @@
  {
   "id": "colorectal-009",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Anorectal",
   "text": "Goodsall's rule: {{anterior}} fistulas track straight; {{posterior}} fistulas curve to the posterior midline.",
   "extra": "Exception: anterior openings more than 3 cm from the verge may track posteriorly.",
   "points": [
@@ -1114,6 +1230,7 @@
  {
   "id": "colorectal-010",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Most common cause of lower GI bleeding in adults: {{diverticulosis}}.",
   "extra": "Arterial bleeding, usually stops spontaneously.",
   "points": [
@@ -1123,6 +1240,7 @@
  {
   "id": "colorectal-011",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Ulcerative colitis begins in the {{rectum}} and is continuous and limited to the mucosa.",
   "extra": "Associated with primary sclerosing cholangitis and toxic megacolon.",
   "points": [
@@ -1132,6 +1250,7 @@
  {
   "id": "colorectal-012",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "text": "Locally advanced rectal cancer (T3 or node positive) gets {{neoadjuvant chemoradiation}} before total mesorectal excision.",
   "extra": "Total neoadjuvant therapy is now common.",
   "points": [
@@ -1141,6 +1260,7 @@
  {
   "id": "hepatobiliary-001",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "Cantlie's line runs from the {{gallbladder fossa to the IVC}}.",
   "extra": "It separates right and left liver along the middle hepatic vein.",
   "points": [
@@ -1150,6 +1270,7 @@
  {
   "id": "hepatobiliary-002",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "The Pringle maneuver clamps the {{hepatoduodenal ligament}}.",
   "extra": "It occludes portal vein and hepatic artery. Bleeding that continues is from hepatic veins or IVC.",
   "points": [
@@ -1160,6 +1281,7 @@
  {
   "id": "hepatobiliary-003",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "A replaced right hepatic artery arises from the {{SMA}}.",
   "extra": "It runs posterolateral to the common bile duct. A replaced left arises from the left gastric.",
   "points": [
@@ -1170,6 +1292,7 @@
  {
   "id": "hepatobiliary-004",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "Most common benign liver tumor: {{hemangioma}}.",
   "extra": "Peripheral nodular enhancement with centripetal fill. Do not biopsy.",
   "points": [
@@ -1180,6 +1303,7 @@
  {
   "id": "hepatobiliary-005",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "Focal nodular hyperplasia has a {{central stellate scar}} and needs no treatment.",
   "extra": "Contains Kupffer cells (takes up sulfur colloid). No malignant potential.",
   "points": [
@@ -1190,6 +1314,7 @@
  {
   "id": "hepatobiliary-006",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "Milan criteria for transplant in HCC: one tumor up to {{5 cm}}, or up to three tumors each up to {{3 cm}}.",
   "extra": "No vascular invasion or extrahepatic disease.",
   "points": [
@@ -1199,6 +1324,7 @@
  {
   "id": "hepatobiliary-007",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "Do not aspirate an {{echinococcal (hydatid)}} cyst.",
   "extra": "Risk of anaphylaxis. Albendazole then resection. Amebic abscess: metronidazole.",
   "points": [
@@ -1210,6 +1336,7 @@
  {
   "id": "hepatobiliary-008",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Biliary",
   "text": "Critical view of safety: only {{two}} structures enter the gallbladder.",
   "extra": "Hepatocystic triangle cleared and lower third of the gallbladder off the cystic plate.",
   "points": [
@@ -1219,6 +1346,7 @@
  {
   "id": "hepatobiliary-009",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Biliary",
   "text": "Brown pigment stones form in the {{bile ducts from infection}}.",
   "extra": "Black stones: hemolysis and cirrhosis. Cholesterol stones are the most common.",
   "points": [
@@ -1229,6 +1357,7 @@
  {
   "id": "hepatobiliary-010",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "text": "Child-Pugh score components: {{bilirubin, albumin, INR, ascites, encephalopathy}}.",
   "extra": "MELD uses bilirubin, INR, creatinine, and sodium.",
   "points": [
@@ -1238,6 +1367,7 @@
  {
   "id": "hepatobiliary-011",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Biliary",
   "text": "Type I choledochal cyst is treated with {{cyst excision and hepaticojejunostomy}}.",
   "extra": "Risk of cholangiocarcinoma. Type I (fusiform) is the most common.",
   "points": [
@@ -1248,6 +1378,7 @@
  {
   "id": "pancreas-001",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Most common cause of acute pancreatitis in the US: {{gallstones}}, then alcohol.",
   "extra": "Cholecystectomy during the same admission for mild gallstone pancreatitis.",
   "points": [
@@ -1257,6 +1388,7 @@
  {
   "id": "pancreas-002",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Tumor marker for pancreatic adenocarcinoma: {{CA 19-9}}; most common mutation: {{KRAS}}.",
   "extra": "About 70% arise in the head.",
   "points": [
@@ -1266,6 +1398,7 @@
  {
   "id": "pancreas-003",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "In pancreas divisum most drainage goes through the {{minor papilla}}.",
   "extra": "Failed fusion of the dorsal and ventral ducts. Duct of Santorini.",
   "points": [
@@ -1276,6 +1409,7 @@
  {
   "id": "pancreas-004",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Annular pancreas is treated with {{duodenal bypass}}, not pancreatic resection.",
   "extra": "Encircles the second part of the duodenum. Duodenoduodenostomy or duodenojejunostomy.",
   "points": [
@@ -1286,6 +1420,7 @@
  {
   "id": "pancreas-005",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Most gastrinomas lie in the gastrinoma triangle; the diagnostic test is {{secretin stimulation}}.",
   "extra": "Triangle: cystic-CBD junction, 2nd-3rd duodenum, neck-body of pancreas. Check for MEN1.",
   "points": [
@@ -1296,6 +1431,7 @@
  {
   "id": "pancreas-006",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Glucagonoma causes {{necrolytic migratory erythema}}, diabetes, and DVT.",
   "extra": "VIPoma: watery diarrhea, hypokalemia, achlorhydria. Somatostatinoma: diabetes, gallstones, steatorrhea.",
   "points": [
@@ -1306,6 +1442,7 @@
  {
   "id": "pancreas-007",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Allow a pancreatic pseudocyst about {{6 weeks}} to mature before internal drainage.",
   "extra": "Drain only if symptomatic. Endoscopic cystgastrostomy is first line.",
   "points": [
@@ -1316,6 +1453,7 @@
  {
   "id": "pancreas-008",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Main-duct IPMN is treated with {{resection}}.",
   "extra": "Branch-duct IPMN: resect for high-risk features such as size over 3 cm, mural nodule, or jaundice.",
   "points": [
@@ -1325,6 +1463,7 @@
  {
   "id": "pancreas-009",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Mucinous cystic neoplasm: middle-aged women, body or tail, {{ovarian-type stroma}}; resect.",
   "extra": "Serous cystadenoma is benign with a central scar.",
   "points": [
@@ -1334,6 +1473,7 @@
  {
   "id": "pancreas-010",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Most common complication after a Whipple: {{delayed gastric emptying}}.",
   "extra": "Pancreatic leak is the most serious; drain amylase guides diagnosis.",
   "points": [
@@ -1343,6 +1483,7 @@
  {
   "id": "pancreas-011",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "text": "Isolated gastric varices from splenic vein thrombosis are treated with {{splenectomy}}.",
   "extra": "Usually from chronic pancreatitis. Called sinistral portal hypertension.",
   "points": [
@@ -1353,6 +1494,7 @@
  {
   "id": "spleen-001",
   "topic": "Spleen",
+  "score": "Abdomen - Spleen",
   "text": "Most common organism in overwhelming post-splenectomy infection: {{Streptococcus pneumoniae}}.",
   "extra": "Highest risk in children and within 2 years of splenectomy.",
   "points": [
@@ -1362,6 +1504,7 @@
  {
   "id": "spleen-002",
   "topic": "Spleen",
+  "score": "Abdomen - Spleen",
   "text": "Most common site of an accessory spleen: {{splenic hilum}}.",
   "extra": "Missing Howell-Jolly bodies after splenectomy suggests one was left.",
   "points": [
@@ -1371,6 +1514,7 @@
  {
   "id": "spleen-003",
   "topic": "Spleen",
+  "score": "Abdomen - Spleen",
   "text": "Repair a splenic artery aneurysm if larger than {{2 cm}}, symptomatic, or in a woman of {{childbearing age}}.",
   "extra": "Rupture in pregnancy carries high maternal and fetal mortality.",
   "points": [
@@ -1380,6 +1524,7 @@
  {
   "id": "spleen-004",
   "topic": "Spleen",
+  "score": "Abdomen - Spleen",
   "text": "Most common indication for elective splenectomy: {{ITP}} that fails medical therapy.",
   "extra": "First line is steroids, then IVIG. The spleen is normal in size.",
   "points": [
@@ -1390,6 +1535,7 @@
  {
   "id": "hernia-001",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "Hesselbach's triangle: {{inferior epigastric vessels}}, rectus border, inguinal ligament.",
   "extra": "Direct hernias pass through it.",
   "points": [
@@ -1399,6 +1545,7 @@
  {
   "id": "hernia-002",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "Nerve most often injured in open inguinal hernia repair: {{ilioinguinal}}.",
   "extra": "Laparoscopic repair: lateral femoral cutaneous nerve (triangle of pain).",
   "points": [
@@ -1408,6 +1555,7 @@
  {
   "id": "hernia-003",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "The triangle of doom contains the {{external iliac vessels}}.",
   "extra": "Bounded by the vas deferens medially and the gonadal vessels laterally.",
   "points": [
@@ -1417,6 +1565,7 @@
  {
   "id": "hernia-004",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "A Richter's hernia traps only the {{antimesenteric wall}} of the bowel.",
   "extra": "It can strangulate without obstruction. Littre: Meckel's. Amyand: appendix in an inguinal hernia.",
   "points": [
@@ -1428,6 +1577,7 @@
  {
   "id": "hernia-005",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "Obturator hernia gives the {{Howship-Romberg}} sign: medial thigh pain with internal rotation.",
   "extra": "Typical in thin elderly women presenting with bowel obstruction.",
   "points": [
@@ -1437,6 +1587,7 @@
  {
   "id": "hernia-006",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "A femoral hernia lies {{medial}} to the femoral vein and below the inguinal ligament.",
   "extra": "High risk of strangulation. More common in women.",
   "points": [
@@ -1447,6 +1598,7 @@
  {
   "id": "hernia-007",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "text": "A Spigelian hernia passes through the {{linea semilunaris}}, usually below the arcuate line.",
   "extra": "It sits deep to the external oblique and is hard to feel.",
   "points": [
@@ -1456,6 +1608,7 @@
  {
   "id": "vascular-001",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "ABI in claudication is about {{0.5 to 0.9}}; rest pain is under 0.4.",
   "extra": "ABI over 1.3 means calcified vessels: use toe pressures.",
   "points": [
@@ -1465,6 +1618,7 @@
  {
   "id": "vascular-002",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "Most common site of lower extremity atherosclerotic occlusion: the {{SFA at the adductor canal}}.",
   "extra": "Causes calf claudication.",
   "points": [
@@ -1474,6 +1628,7 @@
  {
   "id": "vascular-003",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "Leriche syndrome: buttock claudication, {{impotence}}, and absent femoral pulses.",
   "extra": "Aortoiliac occlusive disease.",
   "points": [
@@ -1483,6 +1638,7 @@
  {
   "id": "vascular-004",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "Most common peripheral aneurysm: {{popliteal}}; repair at {{2 cm}} or if symptomatic.",
   "extra": "Half are bilateral; look for AAA. They thrombose or embolize rather than rupture.",
   "points": [
@@ -1493,6 +1649,7 @@
  {
   "id": "vascular-005",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "Bloody diarrhea after AAA repair means {{ischemic colitis}}; get sigmoidoscopy.",
   "extra": "From loss of the IMA. Full-thickness necrosis needs colectomy.",
   "points": [
@@ -1503,6 +1660,7 @@
  {
   "id": "vascular-006",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "An aortoenteric fistula usually involves the {{third or fourth portion of the duodenum}}.",
   "extra": "Herald bleed after aortic graft. Treat with graft excision and extra-anatomic bypass or in-situ reconstruction.",
   "points": [
@@ -1513,6 +1671,7 @@
  {
   "id": "vascular-007",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "An SMA embolus lodges distal to the {{middle colic artery}}, sparing proximal jejunum.",
   "extra": "Pain out of proportion to exam. Most emboli come from the heart.",
   "points": [
@@ -1523,6 +1682,7 @@
  {
   "id": "vascular-008",
   "topic": "Vascular",
+  "score": "Vascular - Venous",
   "text": "May-Thurner syndrome: left iliac vein compressed by the {{right iliac artery}}.",
   "extra": "Left leg DVT. Treat with thrombolysis and stenting.",
   "points": [
@@ -1533,6 +1693,7 @@
  {
   "id": "vascular-009",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "text": "Symptomatic carotid stenosis of {{50 to 99}}% is an indication for endarterectomy.",
   "extra": "Best done within 2 weeks of symptoms. Asymptomatic: consider at 70% or more.",
   "points": [
@@ -1543,6 +1704,7 @@
  {
   "id": "vascular-010",
   "topic": "Vascular",
+  "score": "Vascular - Venous",
   "text": "Virchow's triad: {{stasis}}, {{endothelial injury}}, {{hypercoagulability}}.",
   "extra": "IVC filter if anticoagulation is contraindicated or has failed.",
   "points": [
@@ -1552,6 +1714,7 @@
  {
   "id": "thoracic-001",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "text": "Most common lung cancer: {{adenocarcinoma}}.",
   "extra": "Peripheral; most common in non-smokers. Squamous is central and makes PTHrP.",
   "points": [
@@ -1562,6 +1725,7 @@
  {
   "id": "thoracic-002",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "text": "Small cell lung cancer causes {{SIADH}} and ectopic ACTH.",
   "extra": "Central, neuroendocrine, treated mainly with chemoradiation.",
   "points": [
@@ -1571,6 +1735,7 @@
  {
   "id": "thoracic-003",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "text": "Pancoast tumor causes {{Horner's syndrome}} and ulnar-distribution pain.",
   "extra": "Ptosis, miosis, anhidrosis. Treat with chemoradiation then resection.",
   "points": [
@@ -1581,6 +1746,7 @@
  {
   "id": "thoracic-004",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "text": "Predicted postoperative FEV1 should exceed {{0.8 L}} (about 40%) for lung resection.",
   "extra": "Below that, further testing with VO2 max.",
   "points": [
@@ -1590,6 +1756,7 @@
  {
   "id": "thoracic-005",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "text": "Chylothorax: pleural triglycerides above {{110}} mg/dL.",
   "extra": "The thoracic duct crosses right to left at T4-5. Conservative care first; ligate if over 1 L/day.",
   "points": [
@@ -1600,6 +1767,7 @@
  {
   "id": "thoracic-006",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "text": "Posterior mediastinal masses are usually {{neurogenic tumors}}.",
   "extra": "Anterior: thymoma, teratoma, thyroid, lymphoma. Middle: cysts and nodes.",
   "points": [
@@ -1610,6 +1778,7 @@
  {
   "id": "pediatric-surgery-001",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Pediatric trauma bolus: crystalloid {{20}} mL/kg; blood {{10}} mL/kg.",
   "extra": "Hypotension is a late sign in children.",
   "points": [
@@ -1619,6 +1788,7 @@
  {
   "id": "pediatric-surgery-002",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Most common tracheoesophageal fistula: {{proximal atresia with a distal fistula}} (type C).",
   "extra": "Check for VACTERL anomalies. NG tube coils in the pouch.",
   "points": [
@@ -1629,6 +1799,7 @@
  {
   "id": "pediatric-surgery-003",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Duodenal atresia shows a {{double bubble}} and is linked to Down syndrome.",
   "extra": "Bilious vomiting. Treat with duodenoduodenostomy.",
   "points": [
@@ -1639,6 +1810,7 @@
  {
   "id": "pediatric-surgery-004",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Hirschsprung's disease is diagnosed by {{suction rectal biopsy}} showing no ganglion cells.",
   "extra": "Failure of neural crest migration. Failure to pass meconium in 48 hours.",
   "points": [
@@ -1649,6 +1821,7 @@
  {
   "id": "pediatric-surgery-005",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Intussusception in a stable child is treated with {{air-contrast enema}}.",
   "extra": "Currant jelly stool. Older children and adults: look for a lead point.",
   "points": [
@@ -1659,6 +1832,7 @@
  {
   "id": "pediatric-surgery-006",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Gastroschisis is to the {{right}} of the cord with {{no}} sac.",
   "extra": "Omphalocele: midline with a sac and more associated anomalies.",
   "points": [
@@ -1668,6 +1842,7 @@
  {
   "id": "pediatric-surgery-007",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Most common extracranial solid tumor in children: {{neuroblastoma}}.",
   "extra": "Usually under 2 years, crosses the midline, calcifies. Wilms tumor: about 3 years, does not cross.",
   "points": [
@@ -1678,6 +1853,7 @@
  {
   "id": "pediatric-surgery-008",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "Most common congenital diaphragmatic hernia: {{Bochdalek}} (left posterolateral).",
   "extra": "Stabilize first; pulmonary hypoplasia and hypertension drive mortality. Morgagni is anterior.",
   "points": [
@@ -1688,6 +1864,7 @@
  {
   "id": "pediatric-surgery-009",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "The Kasai procedure for biliary atresia works best before {{60 days}} of age.",
   "extra": "Persistent conjugated jaundice. Many later need transplant.",
   "points": [
@@ -1698,6 +1875,7 @@
  {
   "id": "pediatric-surgery-010",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "text": "NEC's hallmark radiographic finding is {{pneumatosis intestinalis}}.",
   "extra": "Premature infants. Operate for free air or clinical deterioration.",
   "points": [
@@ -1708,6 +1886,7 @@
  {
   "id": "transplant-001",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "Acute rejection is mediated by {{T cells}} and occurs over days to months.",
   "extra": "Treat with pulse steroids, then anti-thymocyte globulin.",
   "points": [
@@ -1717,6 +1896,7 @@
  {
   "id": "transplant-002",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "Tacrolimus and cyclosporine inhibit {{calcineurin}}, lowering IL-2.",
   "extra": "Both are nephrotoxic. Tacrolimus binds FKBP.",
   "points": [
@@ -1727,6 +1907,7 @@
  {
   "id": "transplant-003",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "Sirolimus inhibits {{mTOR}} and impairs wound healing.",
   "extra": "Not nephrotoxic. Mycophenolate inhibits purine synthesis.",
   "points": [
@@ -1737,6 +1918,7 @@
  {
   "id": "transplant-004",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "Most common malignancy after transplant: {{skin cancer (squamous cell)}}.",
   "extra": "PTLD is driven by EBV: reduce immunosuppression, rituximab.",
   "points": [
@@ -1746,6 +1928,7 @@
  {
   "id": "transplant-005",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "Most common infection after transplant: {{CMV}}; treat with ganciclovir.",
   "extra": "Highest risk: donor positive, recipient negative.",
   "points": [
@@ -1755,6 +1938,7 @@
  {
   "id": "transplant-006",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "MELD score uses {{bilirubin, INR, and creatinine}} (plus sodium).",
   "extra": "It predicts 90-day mortality and allocates livers.",
   "points": [
@@ -1764,6 +1948,7 @@
  {
   "id": "transplant-007",
   "topic": "Transplant",
+  "score": "Transplantation",
   "text": "Most common early vascular complication of liver transplant: {{hepatic artery thrombosis}}.",
   "extra": "Causes biliary ischemia. Often needs retransplant.",
   "points": [
@@ -1774,6 +1959,7 @@
  {
   "id": "burns-001",
   "topic": "Burns",
+  "score": "Trauma",
   "text": "Rule of nines: each arm {{9}}%, each leg {{18}}%, front of trunk 18%, back 18%, head 9%.",
   "extra": "Perineum 1%. The patient's palm is about 1%.",
   "points": [
@@ -1784,6 +1970,7 @@
  {
   "id": "burns-002",
   "topic": "Burns",
+  "score": "Trauma",
   "text": "Burn resuscitation urine output target in adults: {{0.5}} mL/kg/h.",
   "extra": "Children: 1 mL/kg/h.",
   "points": [
@@ -1793,6 +1980,7 @@
  {
   "id": "burns-003",
   "topic": "Burns",
+  "score": "Trauma",
   "text": "Mafenide penetrates eschar but causes {{metabolic acidosis}}.",
   "extra": "Carbonic anhydrase inhibition; painful. Silver sulfadiazine: neutropenia. Silver nitrate: hyponatremia.",
   "points": [
@@ -1804,6 +1992,7 @@
  {
   "id": "burns-004",
   "topic": "Burns",
+  "score": "Trauma",
   "text": "Hydrofluoric acid burns are treated with {{calcium gluconate}}.",
   "extra": "Topical gel, injection, or intra-arterial. Watch for hypocalcemia and arrhythmia.",
   "points": [
@@ -1814,6 +2003,7 @@
  {
   "id": "burns-005",
   "topic": "Burns",
+  "score": "Trauma",
   "text": "Carbon monoxide poisoning is treated with {{100% oxygen}}.",
   "extra": "Half-life falls from about 5 hours to 1 hour. Pulse oximetry reads falsely normal.",
   "points": [
@@ -1824,6 +2014,7 @@
  {
   "id": "burns-006",
   "topic": "Burns",
+  "score": "Skin and Soft Tissue",
   "text": "Squamous cell cancer arising in a chronic burn scar: {{Marjolin's ulcer}}.",
   "extra": "Biopsy any chronic non-healing wound.",
   "points": [
@@ -1833,6 +2024,7 @@
  {
   "id": "burns-007",
   "topic": "Burns",
+  "score": "Trauma",
   "text": "Curling's ulcer follows {{burns}}; Cushing's ulcer follows {{head injury}}.",
   "extra": "Both are stress ulcers.",
   "points": [
@@ -1842,6 +2034,7 @@
  {
   "id": "skin-soft-tissue-001",
   "topic": "Skin & Soft Tissue",
+  "score": "Skin and Soft Tissue",
   "text": "Most important prognostic factor in localized melanoma: {{Breslow thickness}}.",
   "extra": "Most common type: superficial spreading. Nodular has the worst prognosis.",
   "points": [
@@ -1852,6 +2045,7 @@
  {
   "id": "skin-soft-tissue-002",
   "topic": "Skin & Soft Tissue",
+  "score": "Skin and Soft Tissue",
   "text": "Sarcomas metastasize by blood, most often to the {{lung}}.",
   "extra": "Grade is the most important prognostic factor. Biopsy with a core needle or longitudinal incision.",
   "points": [
@@ -1862,6 +2056,7 @@
  {
   "id": "skin-soft-tissue-003",
   "topic": "Skin & Soft Tissue",
+  "score": "Skin and Soft Tissue",
   "text": "Most common retroperitoneal sarcoma: {{liposarcoma}}.",
   "extra": "Most common soft tissue sarcoma in children: rhabdomyosarcoma.",
   "points": [
@@ -1871,6 +2066,7 @@
  {
   "id": "skin-soft-tissue-004",
   "topic": "Skin & Soft Tissue",
+  "score": "Skin and Soft Tissue",
   "text": "Most common skin cancer: {{basal cell carcinoma}}.",
   "extra": "Pearly with rolled borders. Rarely metastasizes.",
   "points": [
@@ -1881,6 +2077,7 @@
  {
   "id": "skin-soft-tissue-005",
   "topic": "Skin & Soft Tissue",
+  "score": "Skin and Soft Tissue",
   "text": "Merkel cell carcinoma is a {{neuroendocrine}} skin cancer linked to a polyomavirus.",
   "extra": "Aggressive. Wide excision, sentinel node biopsy, and radiation.",
   "points": [
@@ -1891,6 +2088,7 @@
  {
   "id": "head-neck-001",
   "topic": "Head & Neck",
+  "score": "Head and Neck",
   "text": "Frey's syndrome after parotidectomy involves the {{auriculotemporal}} nerve.",
   "extra": "Gustatory sweating from aberrant parasympathetic regrowth to sweat glands.",
   "points": [
@@ -1900,6 +2098,7 @@
  {
   "id": "head-neck-002",
   "topic": "Head & Neck",
+  "score": "Head and Neck",
   "text": "Thyroglossal duct cyst is removed with the {{Sistrunk}} procedure, including the central hyoid.",
   "extra": "Midline; moves with tongue protrusion.",
   "points": [
@@ -1909,6 +2108,7 @@
  {
   "id": "head-neck-003",
   "topic": "Head & Neck",
+  "score": "Head and Neck",
   "text": "A second branchial cleft cyst lies along the {{anterior border of the sternocleidomastoid}}.",
   "extra": "The most common branchial anomaly.",
   "points": [
@@ -1918,6 +2118,7 @@
  {
   "id": "head-neck-004",
   "topic": "Head & Neck",
+  "score": "Head and Neck",
   "text": "Radical neck dissection removes {{CN XI, the internal jugular vein, and the sternocleidomastoid}}.",
   "extra": "A modified radical dissection preserves at least one of these.",
   "points": [
@@ -1927,6 +2128,7 @@
  {
   "id": "head-neck-005",
   "topic": "Head & Neck",
+  "score": "Head and Neck",
   "text": "Most common malignant salivary gland tumor: {{mucoepidermoid carcinoma}}.",
   "extra": "The smaller the gland, the more likely a tumor is malignant.",
   "points": [
@@ -1936,6 +2138,7 @@
  {
   "id": "oncology-001",
   "topic": "Oncology",
+  "score": "Oncology and Tumor Biology",
   "text": "Doxorubicin causes {{cardiomyopathy}}; bleomycin causes {{pulmonary fibrosis}}.",
   "extra": "Cisplatin: kidney, ear, nerve toxicity. Vincristine: neuropathy. Cyclophosphamide: hemorrhagic cystitis.",
   "points": [
@@ -1947,6 +2150,7 @@
  {
   "id": "oncology-002",
   "topic": "Oncology",
+  "score": "Oncology and Tumor Biology",
   "text": "The most radiosensitive phase of the cell cycle is {{M}} phase.",
   "extra": "S phase is the most resistant.",
   "points": [
@@ -1956,6 +2160,7 @@
  {
   "id": "oncology-003",
   "topic": "Oncology",
+  "score": "Oncology and Tumor Biology",
   "text": "Cowden syndrome: {{PTEN}} mutation with hamartomas, breast, thyroid, and endometrial cancer.",
   "extra": "Peutz-Jeghers: STK11, hamartomatous polyps and mucocutaneous pigmentation.",
   "points": [
@@ -1965,6 +2170,7 @@
  {
   "id": "oncology-004",
   "topic": "Oncology",
+  "score": "Oncology and Tumor Biology",
   "text": "CEA is used for colorectal cancer {{surveillance}}, not screening.",
   "extra": "AFP: HCC and germ cell. CA-125: ovarian. Calcitonin: medullary thyroid.",
   "points": [
@@ -1976,6 +2182,7 @@
  {
   "id": "oncology-005",
   "topic": "Oncology",
+  "score": "Oncology and Tumor Biology",
   "text": "Hemorrhagic cystitis from cyclophosphamide is prevented with {{mesna}}.",
   "extra": "The toxic metabolite is acrolein.",
   "points": [
@@ -1985,6 +2192,7 @@
  {
   "id": "statistics-ethics-001",
   "topic": "Statistics & Ethics",
+  "score": "Biostatistics and Evaluation of Evidence",
   "text": "Sensitivity = {{TP / (TP + FN)}}.",
   "extra": "Specificity = TN / (TN + FP). A sensitive test rules out disease when negative.",
   "points": [
@@ -1995,6 +2203,7 @@
  {
   "id": "statistics-ethics-002",
   "topic": "Statistics & Ethics",
+  "score": "Biostatistics and Evaluation of Evidence",
   "text": "A type I error is a {{false positive}}: rejecting a true null hypothesis.",
   "extra": "Type II error: false negative. Power = 1 minus beta.",
   "points": [
@@ -2005,6 +2214,7 @@
  {
   "id": "statistics-ethics-003",
   "topic": "Statistics & Ethics",
+  "score": "Biostatistics and Evaluation of Evidence",
   "text": "Number needed to treat = 1 / {{absolute risk reduction}}.",
   "extra": "Relative risk reduction overstates benefit when baseline risk is low.",
   "points": [
@@ -2014,6 +2224,7 @@
  {
   "id": "statistics-ethics-004",
   "topic": "Statistics & Ethics",
+  "score": "Biostatistics and Evaluation of Evidence",
   "text": "A case-control study yields an {{odds ratio}}; a cohort study yields a {{relative risk}}.",
   "extra": "Case-control starts from the outcome and looks back at exposure.",
   "points": [
@@ -2023,6 +2234,7 @@
  {
   "id": "statistics-ethics-005",
   "topic": "Statistics & Ethics",
+  "score": "Biostatistics and Evaluation of Evidence",
   "text": "Compare the means of two groups with a {{t-test}}; three or more with {{ANOVA}}.",
   "extra": "Categorical data: chi-square.",
   "points": [
@@ -2032,6 +2244,7 @@
  {
   "id": "statistics-ethics-006",
   "topic": "Statistics & Ethics",
+  "score": "Ethics",
   "text": "In an emergency when the patient cannot consent and no surrogate is available, consent is {{implied}}.",
   "extra": "Proceed with life-saving treatment.",
   "points": [

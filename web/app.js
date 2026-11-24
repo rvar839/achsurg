@@ -9,17 +9,16 @@
     { name: 'Meera', hash: '9367fb73c9f1d87053a4e03c77c288b804df94197be67706401a2751aa4bc496' },
     { name: 'Pooja', hash: '130400b0812eda744d8376680827ebb819dbe1103fd9241dd5bb9140f7c1c57d' }
   ];
-  var NEW_PER_BATCH = 20;
+  var QUESTION_SHARE = 0.35; // share of Learn items that are multiple-choice questions
   var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
   var app = document.getElementById('app');
   var content = null;
   var user = null;
   var progress = Core.emptyProgress();
-  var tab = 'qbank';
+  var tab = 'learn';
   var login = { selected: null, failed: false };
-  var qb = { q: null, selected: null, answered: 0, correct: 0 };
-  var fc = { queue: [], revealed: false, started: false, done: 0, known: 0 };
+  var learn = newLearn();
   var settings = { confirmReset: false };
 
   // ---- Storage -----------------------------------------------------------
@@ -60,7 +59,17 @@
     }).join('');
   }
   function scoreClass(v) { return v >= Core.GOAL ? 'good' : v >= 0.5 ? 'warn' : 'bad'; }
-  function chip(topic) { return '<span class="chip">' + esc(topic) + '</span>'; }
+  // The SCORE curriculum category an item belongs to. A card made from a missed question takes the question's.
+  function scoreOf(item) {
+    if (item.score) return item.score;
+    if (item.fromMissed) {
+      var qid = String(item.parent || item.id).replace(/^missed-/, '');
+      var q = content.questions.filter(function (x) { return x.id === qid; })[0];
+      if (q && q.score) return q.score;
+    }
+    return item.topic;
+  }
+  function chip(item) { return '<span class="chip">SCORE: ' + esc(scoreOf(item)) + '</span>'; }
   function shuffle(list) {
     var a = list.slice();
     for (var i = a.length - 1; i > 0; i--) {
@@ -70,10 +79,14 @@
     return a;
   }
 
-  // ---- Qbank -------------------------------------------------------------
+  // ---- Learn: one continuous stream of questions and flashcards ----------
 
-  // Random across all topics: unseen questions first, with missed ones mixed back in.
-  function nextQuestion() {
+  function newLearn() {
+    return { item: null, kind: null, selected: null, revealed: false, recent: [], lastQ: null, afterMiss: false };
+  }
+
+  // Unseen questions first, with missed ones mixed back in.
+  function pickQuestion() {
     var last = Core.lastResults(progress);
     var all = content.questions;
     var unseen = all.filter(function (q) { return last[q.id] === undefined; });
@@ -81,51 +94,10 @@
     var pool = all;
     if (unseen.length && (!missed.length || Math.random() < 0.75)) pool = unseen;
     else if (missed.length) pool = missed;
-    var currentId = qb.q && qb.q.id;
-    var candidates = pool.filter(function (q) { return q.id !== currentId; });
+    var candidates = pool.filter(function (q) { return q.id !== learn.lastQ; });
     var from = candidates.length ? candidates : pool;
-    qb.q = from[Math.floor(Math.random() * from.length)] || null;
-    qb.selected = null;
+    return from[Math.floor(Math.random() * from.length)] || null;
   }
-
-  function choose(index) {
-    if (qb.selected !== null || !qb.q) return;
-    qb.selected = index;
-    var correct = index === qb.q.answer;
-    qb.answered += 1;
-    if (correct) qb.correct += 1;
-    Core.recordAnswer(progress, qb.q, correct, Date.now());
-    save();
-  }
-
-  function qbankHTML() {
-    var q = qb.q;
-    if (!q) return { main: '<p class="empty">The question bank is empty.</p>' };
-    var answered = qb.selected !== null;
-    var html = chip(q.topic) + '<p class="stem">' + esc(q.stem) + '</p><div class="choices">';
-    q.choices.forEach(function (choice, i) {
-      var cls = 'choice';
-      if (answered) cls += i === q.answer ? ' correct' : i === qb.selected ? ' wrong' : ' dim';
-      html += '<button class="' + cls + '" data-action="choose" data-index="' + i + '">' +
-        '<span class="letter">' + LETTERS[i] + '</span><span>' + esc(choice) + '</span></button>';
-    });
-    html += '</div>';
-    if (answered) {
-      var ok = qb.selected === q.answer;
-      html += '<div class="panel">' +
-        '<h3 class="' + (ok ? 'good' : 'bad') + '">' + (ok ? 'Correct' : 'Incorrect') + '</h3>' +
-        '<p>' + esc(q.explanation) + '</p><hr>' +
-        '<div class="label">Key point</div><p>' + clozeHTML(q.card.text, true) + '</p>' +
-        (ok ? '' : '<p class="note">Added to your flashcards</p>') + '</div>';
-    }
-    return {
-      main: html,
-      side: qb.answered ? qb.correct + '/' + qb.answered : '',
-      actions: answered ? '<button class="btn primary" data-action="next">Next question</button>' : ''
-    };
-  }
-
-  // ---- Flashcards --------------------------------------------------------
 
   // Cards never studied: missed-question cards first, then weak topics, then the rest.
   function newCards() {
@@ -139,106 +111,114 @@
       .concat(rest.filter(function (c) { return !weak[c.topic]; }));
   }
 
-  // Take up to `limit` new cards, never two from the same sentence in one sitting
-  // (seeing one blank filled in would give away its sibling).
-  function pickNew(cards, limit, taken) {
-    var recent = Date.now() - 12 * 3600000;
-    var used = taken || {};
-    Object.keys(progress.cards).forEach(function (id) {
-      if (progress.cards[id].last > recent) used[id.replace(/\.\d+$/, '')] = true;
-    });
-    var out = [];
-    cards.forEach(function (c) {
-      if (out.length >= limit || used[c.parent]) return;
-      used[c.parent] = true;
-      out.push(c);
-    });
-    return out;
-  }
-
-  function buildQueue(includeNew) {
+  // Due cards first, then a new card, then whichever card is closest to due. Never a card whose
+  // sentence was shown in the last few items or studied in the last 12 hours as a sibling blank
+  // (seeing one blank filled in would give away the other).
+  function pickCard() {
     var now = Date.now();
-    var due = Core.deck(content, progress)
-      .filter(function (c) { return progress.cards[c.id] && progress.cards[c.id].due <= now; })
+    var deck = Core.deck(content, progress);
+    var blocked = {};
+    learn.recent.forEach(function (parent) { blocked[parent] = true; });
+    function free(c) { return !blocked[c.parent]; }
+    var due = deck.filter(function (c) { return progress.cards[c.id] && progress.cards[c.id].due <= now && free(c); })
       .sort(function (a, b) { return progress.cards[a.id].due - progress.cards[b.id].due; });
-    var fresh = newCards();
-    var taken = {};
-    due.forEach(function (c) { taken[c.parent] = true; });
-    var batch = pickNew(includeNew ? fresh : fresh.filter(function (c) { return c.fromMissed; }),
-                        includeNew ? NEW_PER_BATCH : 50, taken);
-    fc.queue = due.concat(batch);
-    fc.revealed = false;
+    var fresh = newCards().filter(free);
+    if (learn.afterMiss && fresh.length && fresh[0].fromMissed) return fresh[0];
+    if (due.length) return due[0];
+    var recent = now - 12 * 3600000;
+    var studied = {};
+    Object.keys(progress.cards).forEach(function (id) {
+      if (progress.cards[id].last > recent) studied[id.replace(/\.\d+$/, '')] = true;
+    });
+    var unseen = fresh.filter(function (c) { return !studied[c.parent]; });
+    if (unseen.length) return unseen[0];
+    var rest = deck.filter(free);
+    if (!rest.length) rest = deck;
+    function dueAt(c) { return progress.cards[c.id] ? progress.cards[c.id].due : 0; }
+    rest.sort(function (a, b) { return dueAt(a) - dueAt(b); });
+    return rest[Math.floor(Math.random() * Math.min(10, rest.length))] || null;
   }
 
-  function refreshFlashcards() {
-    if (!fc.started) { fc.started = true; buildQueue(true); return; }
-    if (!fc.queue.length) { buildQueue(false); return; }
-    // Pull in cards created by Qbank misses since this tab was last open.
-    var queued = {};
-    fc.queue.forEach(function (c) { queued[c.parent] = true; });
-    var missed = pickNew(Core.deck(content, progress).filter(function (c) {
-      return c.fromMissed && !progress.cards[c.id];
-    }), 50, queued);
-    if (missed.length) fc.queue.splice.apply(fc.queue, [Math.min(1, fc.queue.length), 0].concat(missed));
+  function nextItem() {
+    var q = null, card = null;
+    if (!learn.afterMiss && Math.random() < QUESTION_SHARE) q = pickQuestion();
+    if (!q) card = pickCard();
+    if (!q && !card) q = pickQuestion();
+    learn.afterMiss = false;
+    learn.item = q || card;
+    learn.kind = q ? 'q' : card ? 'c' : null;
+    learn.selected = null;
+    learn.revealed = false;
+    if (q) learn.lastQ = q.id;
+  }
+
+  function choose(index) {
+    var q = learn.item;
+    if (learn.kind !== 'q' || learn.selected !== null || !q) return;
+    learn.selected = index;
+    var correct = index === q.answer;
+    if (!correct) learn.afterMiss = true; // its key-point flashcard comes next
+    Core.recordAnswer(progress, q, correct, Date.now());
+    save();
   }
 
   function answerCard(knew) {
-    var card = fc.queue[0];
-    if (!card || !fc.revealed) return;
+    var card = learn.item;
+    if (learn.kind !== 'c' || !card || !learn.revealed) return;
     Core.recordReview(progress, card, knew, Date.now());
     save();
-    fc.queue.shift();
-    fc.done += 1;
-    if (knew) fc.known += 1;
-    // A card you did not know comes back after a few others in this same session.
-    if (!knew) fc.queue.splice(Math.min(fc.queue.length, 5), 0, card);
-    fc.revealed = false;
+    learn.recent.push(card.parent);
+    if (learn.recent.length > 6) learn.recent.shift();
+    nextItem();
   }
 
-  function nextDueText() {
-    var now = Date.now(), next = Infinity;
-    Object.keys(progress.cards).forEach(function (id) {
-      var due = progress.cards[id].due;
-      if (due > now && due < next) next = due;
+  function questionHTML(q) {
+    var answered = learn.selected !== null;
+    var html = '<div class="row">' + chip(q) + '<span class="tag muted">Question</span></div>' +
+      '<p class="stem">' + esc(q.stem) + '</p><div class="choices">';
+    q.choices.forEach(function (choice, i) {
+      var cls = 'choice';
+      if (answered) cls += i === q.answer ? ' correct' : i === learn.selected ? ' wrong' : ' dim';
+      html += '<button class="' + cls + '" data-action="choose" data-index="' + i + '">' +
+        '<span class="letter">' + LETTERS[i] + '</span><span>' + esc(choice) + '</span></button>';
     });
-    return next === Infinity ? '' : 'Next review in ' + Core.formatInterval(next - now) + '.';
+    html += '</div>';
+    if (answered) {
+      var ok = learn.selected === q.answer;
+      html += '<div class="panel">' +
+        '<h3 class="' + (ok ? 'good' : 'bad') + '">' + (ok ? 'Correct' : 'Incorrect') + '</h3>' +
+        '<p>' + esc(q.explanation) + '</p><hr>' +
+        '<div class="label">Key point</div><p>' + clozeHTML(q.card.text, true) + '</p>' +
+        (ok ? '' : '<p class="note">Its flashcard comes next</p>') + '</div>';
+    }
+    return { main: html, actions: answered ? '<button class="btn primary" data-action="next">Next</button>' : '' };
   }
 
-  function flashcardsHTML() {
-    var card = fc.queue[0];
-    if (!card) {
-      var remaining = pickNew(newCards(), NEW_PER_BATCH).length;
-      var session = fc.done ? '<p class="session">' + fc.done + ' reviewed this session, ' +
-        Core.pct(fc.known / fc.done) + ' known.</p>' : '';
-      return {
-        main: '<div class="empty"><h2>All caught up</h2>' + session +
-          '<p>' + (nextDueText() || 'No cards are due right now.') + '</p>' +
-          (remaining ? '<button class="btn primary inline" data-action="more">Learn ' + remaining + ' new cards</button>' : '') +
-          '</div>'
-      };
-    }
+  function cardHTML(card) {
     var state = progress.cards[card.id];
-    var total = fc.done + fc.queue.length;
     var points = (card.points && card.points.length ? card.points : [card.extra]);
-    var html = '<div class="progress"><i style="width:' + (total ? (100 * fc.done / total).toFixed(0) : 0) + '%"></i></div>' +
-      '<div class="card' + (fc.revealed ? ' revealed' : '') + '" data-action="reveal">' +
-      '<div class="row">' + chip(card.topic) +
+    var html = '<div class="card' + (learn.revealed ? ' revealed' : '') + '" data-action="reveal">' +
+      '<div class="row">' + chip(card) +
       '<span class="tag ' + (card.fromMissed ? 'warn' : 'muted') + '">' +
       (card.fromMissed ? 'Missed question' : !state ? 'New' : state.lapses ? 'Relearning' : 'Review') + '</span></div>' +
-      '<p class="cloze-text">' + clozeHTML(card.text, fc.revealed, card.target) + '</p>' +
-      (fc.revealed
+      '<p class="cloze-text">' + clozeHTML(card.text, learn.revealed, card.target) + '</p>' +
+      (learn.revealed
         ? '<ul class="points">' + points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>'
         : '<p class="hint">Tap to reveal</p>') + '</div>';
-    var off = fc.revealed ? '' : ' disabled';
+    var off = learn.revealed ? '' : ' disabled';
     var now = Date.now();
     return {
       main: html,
-      side: fc.queue.length + ' left',
       actions: '<button class="btn bad two" data-action="dontknow"' + off + '><span>Don\'t know</span><small>again in ' +
                Core.formatInterval(Core.preview(state, false, now)) + '</small></button>' +
                '<button class="btn good two" data-action="know"' + off + '><span>Know</span><small>back in ' +
                Core.formatInterval(Core.preview(state, true, now)) + '</small></button>'
     };
+  }
+
+  function learnHTML() {
+    if (!learn.item) return { main: '<p class="empty">There is nothing to study yet.</p>' };
+    return learn.kind === 'q' ? questionHTML(learn.item) : cardHTML(learn.item);
   }
 
   // ---- Analytics ---------------------------------------------------------
@@ -257,9 +237,9 @@
   function analyticsHTML() {
     var s = Core.summarize(progress, content, Date.now());
     var html = ringHTML(s.score) +
-      '<p class="next">' + esc(s.hasData ? s.nextStep : 'Answer questions and review flashcards to build your score.') + '</p>' +
+      '<p class="next">' + esc(s.hasData ? s.nextStep.replace('Keep going in the Qbank.', 'Keep going in Learn.').replace('Learn a new batch.', 'Keep going in Learn.') : 'Answer questions and review flashcards in Learn to build your score.') + '</p>' +
       '<div class="metrics">' +
-      '<div><b>' + Core.pct(s.questionScore) + '</b><span>Qbank ' + s.questionsSeen + '/' + s.questionsTotal + '</span></div>' +
+      '<div><b>' + Core.pct(s.questionScore) + '</b><span>Questions ' + s.questionsSeen + '/' + s.questionsTotal + '</span></div>' +
       '<div><b>' + Core.pct(s.cardScore) + '</b><span>Cards ' + s.cardsSeen + '/' + s.cardsTotal + '</span></div>' +
       '<div><b>' + s.cardsDue + '</b><span>Due now</span></div></div>';
     if (!s.hasData) return { main: html };
@@ -345,15 +325,14 @@
   }
 
   function startSession() {
-    tab = 'qbank';
-    qb = { q: null, selected: null, answered: 0, correct: 0 };
-    fc = { queue: [], revealed: false, started: false, done: 0, known: 0 };
-    nextQuestion();
+    tab = 'learn';
+    learn = newLearn();
+    nextItem();
   }
 
   // ---- Render ------------------------------------------------------------
 
-  var TABS = [['qbank', 'Qbank'], ['flashcards', 'Flashcards'], ['analytics', 'Analytics'], ['settings', 'Settings']];
+  var TABS = [['learn', 'Learn'], ['analytics', 'Analytics'], ['settings', 'Settings']];
 
   function render(keepScroll) {
     if (!content) { app.innerHTML = '<p class="empty">Loading...</p>'; return; }
@@ -363,8 +342,7 @@
       if (input) input.focus();
       return;
     }
-    var view = tab === 'qbank' ? qbankHTML() : tab === 'flashcards' ? flashcardsHTML()
-      : tab === 'analytics' ? analyticsHTML() : settingsHTML();
+    var view = tab === 'learn' ? learnHTML() : tab === 'analytics' ? analyticsHTML() : settingsHTML();
     var title = TABS.filter(function (t) { return t[0] === tab; })[0][1];
     var main = document.querySelector('main');
     var scroll = keepScroll && main ? main.scrollTop : 0;
@@ -388,15 +366,13 @@
       case 'tab':
         tab = el.getAttribute('data-tab');
         settings.confirmReset = false;
-        if (tab === 'flashcards') refreshFlashcards();
-        if (tab === 'qbank' && !qb.q) nextQuestion();
+        if (tab === 'learn' && !learn.item) nextItem();
         break;
       case 'choose': choose(Number(el.getAttribute('data-index'))); keepScroll = true; break;
-      case 'next': nextQuestion(); break;
-      case 'reveal': if (fc.revealed) return; fc.revealed = true; keepScroll = true; break;
+      case 'next': nextItem(); break;
+      case 'reveal': if (learn.kind !== 'c' || learn.revealed) return; learn.revealed = true; keepScroll = true; break;
       case 'know': answerCard(true); break;
       case 'dontknow': answerCard(false); break;
-      case 'more': buildQueue(true); break;
       case 'signout': user = null; store('absite.user', null); progress = Core.emptyProgress(); break;
       case 'reset': settings.confirmReset = true; keepScroll = true; break;
       case 'reset-cancel': settings.confirmReset = false; keepScroll = true; break;
@@ -412,7 +388,7 @@
   var touch = null;
   app.addEventListener('touchstart', function (event) {
     var el = event.target.closest('.card');
-    if (!el || tab !== 'flashcards' || !fc.revealed) { touch = null; return; }
+    if (!el || tab !== 'learn' || learn.kind !== 'c' || !learn.revealed) { touch = null; return; }
     var t = event.touches[0];
     touch = { x: t.clientX, y: t.clientY, dx: 0, dy: 0, el: el };
   }, { passive: true });
@@ -441,14 +417,14 @@
 
   // Keyboard on a computer: Space reveals, Right arrow = Know, Left arrow = Don't know.
   document.addEventListener('keydown', function (event) {
-    if (!user || tab !== 'flashcards' || !fc.queue.length) return;
+    if (!user || tab !== 'learn' || learn.kind !== 'c' || !learn.item) return;
     if (event.target && event.target.tagName === 'INPUT') return;
-    if (!fc.revealed && (event.key === ' ' || event.key === 'Enter')) { fc.revealed = true; }
-    else if (fc.revealed && event.key === 'ArrowRight') { answerCard(true); }
-    else if (fc.revealed && event.key === 'ArrowLeft') { answerCard(false); }
+    if (!learn.revealed && (event.key === ' ' || event.key === 'Enter')) { learn.revealed = true; }
+    else if (learn.revealed && event.key === 'ArrowRight') { answerCard(true); }
+    else if (learn.revealed && event.key === 'ArrowLeft') { answerCard(false); }
     else return;
     event.preventDefault();
-    render(!fc.revealed ? false : true);
+    render(learn.kind === 'c' && learn.revealed);
   });
 
   app.addEventListener('submit', function (event) {

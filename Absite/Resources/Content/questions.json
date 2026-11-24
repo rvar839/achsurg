@@ -2,6 +2,7 @@
  {
   "id": "q001",
   "topic": "Trauma",
+  "score": "Trauma",
   "stem": "A 24-year-old man arrives after a stab wound to zone II of the neck. He has an expanding hematoma and stridor. After the airway is secured, what is the next step?",
   "choices": [
    "Operative neck exploration",
@@ -22,6 +23,7 @@
  {
   "id": "q002",
   "topic": "Trauma",
+  "score": "Trauma",
   "stem": "A 40-year-old woman is hypotensive (BP 78/40) after a motor vehicle crash despite 2 units of blood. FAST shows fluid in Morison's pouch. Chest and pelvic films are normal. Next step?",
   "choices": [
    "Angiography",
@@ -43,6 +45,7 @@
  {
   "id": "q003",
   "topic": "Trauma",
+  "score": "Trauma",
   "stem": "A 55-year-old man has an open-book pelvic fracture after a motorcycle crash. He remains hypotensive after a pelvic binder and transfusion. FAST is negative and the chest film is clear. Best next step?",
   "choices": [
    "External fixation in 48 hours",
@@ -64,6 +67,7 @@
  {
   "id": "q004",
   "topic": "Trauma",
+  "score": "Trauma",
   "stem": "A chest tube placed for a stab wound to the right chest immediately drains 1,700 mL of blood. What is the next step?",
   "choices": [
    "Place a second chest tube",
@@ -84,6 +88,7 @@
  {
   "id": "q005",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "stem": "A 60-year-old with pancreatitis develops ARDS. Which ventilator strategy improves survival?",
   "choices": [
    "Inverse ratio ventilation targeting normal PaCO2",
@@ -105,6 +110,7 @@
  {
   "id": "q006",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "stem": "A patient with perforated diverticulitis remains hypotensive after 30 mL/kg of crystalloid. Which vasopressor is first line?",
   "choices": [
    "Epinephrine",
@@ -126,6 +132,7 @@
  {
   "id": "q007",
   "topic": "Critical Care",
+  "score": "Surgical Critical Care",
   "stem": "After massive resuscitation for a ruptured AAA, a patient has rising peak airway pressures, oliguria, and a tense abdomen. Bladder pressure is 28 mmHg. Treatment?",
   "choices": [
    "CT of the abdomen",
@@ -146,6 +153,7 @@
  {
   "id": "q008",
   "topic": "Fluids & Electrolytes",
+  "score": "Fluids, Electrolytes and Acid-Base Balance",
   "stem": "A dialysis patient has a potassium of 7.1 mEq/L with peaked T waves and a widened QRS. What is given first?",
   "choices": [
    "Insulin and dextrose",
@@ -166,6 +174,7 @@
  {
   "id": "q009",
   "topic": "Nutrition",
+  "score": "Nutrition and Metabolism",
   "stem": "A severely malnourished patient is started on full-rate TPN. Two days later he has weakness and respiratory failure. Which abnormality is most likely?",
   "choices": [
    "Hyperkalemia",
@@ -186,6 +195,7 @@
  {
   "id": "q010",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "stem": "A woman with heavy menses and bleeding after dental work has a normal platelet count, normal PT, and a mildly prolonged PTT. Best treatment before a minor procedure?",
   "choices": [
    "Platelet transfusion",
@@ -207,6 +217,7 @@
  {
   "id": "q011",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "stem": "On day 7 of heparin after a hip fracture, a patient's platelets fall from 240 to 90 and he develops a new DVT. Next step?",
   "choices": [
    "Start warfarin alone",
@@ -228,6 +239,7 @@
  {
   "id": "q012",
   "topic": "Hematology",
+  "score": "Transfusion and Disorders of Coagulation",
   "stem": "A patient on warfarin has an intracranial hemorrhage with an INR of 4.2. What is the fastest effective reversal?",
   "choices": [
    "Cryoprecipitate",
@@ -248,6 +260,7 @@
  {
   "id": "q013",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "stem": "A diabetic man has rapidly spreading thigh erythema, pain out of proportion, bullae, and crepitus. He is tachycardic and hypotensive. What is the most important step?",
   "choices": [
    "Hyperbaric oxygen",
@@ -268,6 +281,7 @@
  {
   "id": "q014",
   "topic": "Infection",
+  "score": "Infection and Antimicrobial Therapy",
   "stem": "A hospitalized patient on antibiotics develops a first episode of non-fulminant C. difficile colitis. Which initial treatment is appropriate?",
   "choices": [
    "Oral metronidazole for 6 weeks",
@@ -289,6 +303,7 @@
  {
   "id": "q015",
   "topic": "Anesthesia & Pharmacology",
+  "score": "Anesthesia",
   "stem": "Thirty minutes after induction with sevoflurane and succinylcholine, a patient has rising end-tidal CO2, masseter rigidity, and tachycardia. Treatment?",
   "choices": [
    "Deepen the volatile anesthetic",
@@ -311,6 +326,7 @@
  {
   "id": "q016",
   "topic": "Wound Healing",
+  "score": "Wound Healing",
   "stem": "Which cell is most essential for normal wound healing?",
   "choices": [
    "Lymphocyte",
@@ -332,6 +348,7 @@
  {
   "id": "q017",
   "topic": "Breast",
+  "score": "Breast",
   "stem": "A core needle biopsy of mammographic calcifications shows atypical ductal hyperplasia. Next step?",
   "choices": [
    "Simple mastectomy",
@@ -352,6 +369,7 @@
  {
   "id": "q018",
   "topic": "Breast",
+  "score": "Breast",
   "stem": "A woman with a 1.8 cm clinically node-negative invasive ductal cancer has lumpectomy and sentinel node biopsy. Two of three sentinel nodes are positive. She will receive whole-breast radiation and systemic therapy. Axillary management?",
   "choices": [
    "No further axillary surgery",
@@ -372,6 +390,7 @@
  {
   "id": "q019",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "stem": "FNA of a thyroid nodule shows medullary thyroid carcinoma. What must be done before thyroidectomy?",
   "choices": [
    "Plasma metanephrines",
@@ -394,6 +413,7 @@
  {
   "id": "q020",
   "topic": "Endocrine",
+  "score": "Endocrine",
   "stem": "A patient with a pheochromocytoma is being prepared for adrenalectomy. Correct medication sequence?",
   "choices": [
    "Beta blocker first, then alpha blocker",
@@ -415,6 +435,7 @@
  {
   "id": "q021",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "stem": "A patient with dysphagia to solids and liquids has a bird's-beak esophagram. Manometry shows absent peristalsis and incomplete LES relaxation. Best surgical treatment?",
   "choices": [
    "Heller myotomy with partial fundoplication",
@@ -436,6 +457,7 @@
  {
   "id": "q022",
   "topic": "Esophagus",
+  "score": "Alimentary Tract - Esophagus",
   "stem": "An elderly man has regurgitation of undigested food and halitosis. Barium swallow shows a posterior pharyngeal pouch. What is the key component of treatment?",
   "choices": [
    "Proton pump inhibitor",
@@ -456,6 +478,7 @@
  {
   "id": "q023",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "stem": "Endoscopy cannot control a bleeding posterior duodenal bulb ulcer. Which vessel is the source?",
   "choices": [
    "Left gastric artery",
@@ -476,6 +499,7 @@
  {
   "id": "q024",
   "topic": "Stomach",
+  "score": "Alimentary Tract - Stomach",
   "stem": "A 5 cm gastric submucosal mass is positive for CD117. It is resectable. Appropriate operation?",
   "choices": [
    "Chemoradiation only",
@@ -496,6 +520,7 @@
  {
   "id": "q025",
   "topic": "Small Bowel",
+  "score": "Alimentary Tract - Small Intestine",
   "stem": "Pathology after appendectomy shows a 2.5 cm neuroendocrine (carcinoid) tumor at the base of the appendix. Next step?",
   "choices": [
    "No further treatment",
@@ -517,6 +542,7 @@
  {
   "id": "q026",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Large Intestine",
   "stem": "A nursing home resident has a massively distended abdomen and a coffee-bean sign pointing to the right upper quadrant. He has no peritonitis. Best initial management?",
   "choices": [
    "Endoscopic detorsion, then sigmoid colectomy during the same admission",
@@ -537,6 +563,7 @@
  {
   "id": "q027",
   "topic": "Colorectal",
+  "score": "Alimentary Tract - Anorectal",
   "stem": "A 3 cm squamous cell carcinoma of the anal canal is confirmed by biopsy. There are no distant metastases. Treatment?",
   "choices": [
    "Chemoradiation with 5-FU and mitomycin C",
@@ -558,6 +585,7 @@
  {
   "id": "q028",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Liver",
   "stem": "A 30-year-old woman on oral contraceptives has a 6 cm hepatic adenoma on MRI. Recommended management?",
   "choices": [
    "Resection",
@@ -579,6 +607,7 @@
  {
   "id": "q029",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Biliary",
   "stem": "A patient has fever, jaundice, and right upper quadrant pain. He becomes confused and hypotensive despite fluids and antibiotics. Next step?",
   "choices": [
    "MRCP in the morning",
@@ -599,6 +628,7 @@
  {
   "id": "q030",
   "topic": "Hepatobiliary",
+  "score": "Abdomen - Biliary",
   "stem": "Pathology after laparoscopic cholecystectomy shows gallbladder adenocarcinoma invading the muscular layer (T1b). Next step?",
   "choices": [
    "No further treatment",
@@ -620,6 +650,7 @@
  {
   "id": "q031",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "stem": "A woman has fasting glucose of 38 mg/dL with confusion relieved by glucose. Insulin and C-peptide are elevated; sulfonylurea screen is negative. A 1.5 cm pancreatic body mass sits away from the main duct. Treatment?",
   "choices": [
    "Total pancreatectomy",
@@ -641,6 +672,7 @@
  {
   "id": "q032",
   "topic": "Pancreas",
+  "score": "Abdomen - Pancreas",
   "stem": "Three weeks into necrotizing pancreatitis, a patient has fever and gas within a walled-off collection on CT. He is stable on antibiotics. Best approach?",
   "choices": [
    "Step-up approach: percutaneous or endoscopic drainage first",
@@ -662,6 +694,7 @@
  {
   "id": "q033",
   "topic": "Spleen",
+  "score": "Abdomen - Spleen",
   "stem": "A patient undergoes emergency splenectomy for trauma. When should vaccines be given?",
   "choices": [
    "Never needed after trauma",
@@ -682,6 +715,7 @@
  {
   "id": "q034",
   "topic": "Hernia",
+  "score": "Abdomen - Hernia",
   "stem": "During laparoscopic inguinal hernia repair, a hernia sac is seen lateral to the inferior epigastric vessels. What type is it?",
   "choices": [
    "Direct inguinal hernia",
@@ -703,6 +737,7 @@
  {
   "id": "q035",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "stem": "An asymptomatic 68-year-old man has an infrarenal abdominal aortic aneurysm. At what diameter is elective repair recommended?",
   "choices": [
    "5.5 cm",
@@ -724,6 +759,7 @@
  {
   "id": "q036",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "stem": "After a carotid endarterectomy, the patient's tongue deviates toward the operated side. Which nerve was injured?",
   "choices": [
    "Glossopharyngeal nerve",
@@ -745,6 +781,7 @@
  {
   "id": "q037",
   "topic": "Vascular",
+  "score": "Vascular - Arterial Disease",
   "stem": "Six hours after embolectomy for an acutely ischemic leg, the patient has severe calf pain with passive toe motion and numbness in the first web space. Pulses are palpable. Treatment?",
   "choices": [
    "Repeat angiogram",
@@ -767,6 +804,7 @@
  {
   "id": "q038",
   "topic": "Thoracic",
+  "score": "Thoracic Surgery",
   "stem": "A 45-year-old with ptosis and fatigable weakness has an anterior mediastinal mass on CT. Most likely diagnosis?",
   "choices": [
    "Neurogenic tumor",
@@ -788,6 +826,7 @@
  {
   "id": "q039",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "stem": "A 5-week-old boy has projectile non-bilious vomiting. Ultrasound confirms pyloric stenosis. Chloride is 85 and bicarbonate is 36. Next step?",
   "choices": [
    "Immediate pyloromyotomy",
@@ -808,6 +847,7 @@
  {
   "id": "q040",
   "topic": "Pediatric Surgery",
+  "score": "Pediatric Surgery",
   "stem": "A 10-day-old previously well infant has sudden bilious vomiting. He is stable. Next step?",
   "choices": [
    "Abdominal ultrasound for pyloric stenosis",
@@ -828,6 +868,7 @@
  {
   "id": "q041",
   "topic": "Transplant",
+  "score": "Transplantation",
   "stem": "Minutes after reperfusion, a transplanted kidney turns mottled and cyanotic. What is the mechanism?",
   "choices": [
    "T-cell mediated cellular rejection",
@@ -849,6 +890,7 @@
  {
   "id": "q042",
   "topic": "Burns",
+  "score": "Trauma",
   "stem": "An 80 kg man has 40% TBSA deep partial-thickness burns. Using the Parkland formula, how much lactated Ringer's is given in the first 8 hours after the burn?",
   "choices": [
    "3,200 mL",
@@ -870,6 +912,7 @@
  {
   "id": "q043",
   "topic": "Skin & Soft Tissue",
+  "score": "Skin and Soft Tissue",
   "stem": "A biopsy of a back lesion shows melanoma, Breslow depth 1.5 mm, no palpable nodes. Appropriate surgery?",
   "choices": [
    "Wide excision with 1 to 2 cm margins and sentinel lymph node biopsy",
@@ -890,6 +933,7 @@
  {
   "id": "q044",
   "topic": "Statistics & Ethics",
+  "score": "Biostatistics and Evaluation of Evidence",
   "stem": "A screening test is applied in a population where the disease becomes much less common. Which value will fall?",
   "choices": [
    "Sensitivity",
@@ -910,6 +954,7 @@
  {
   "id": "q045",
   "topic": "Head & Neck",
+  "score": "Head and Neck",
   "stem": "A 50-year-old has a slow-growing, painless mass in the superficial lobe of the parotid. FNA shows pleomorphic adenoma. Treatment?",
   "choices": [
    "Superficial parotidectomy with facial nerve preservation",
@@ -931,6 +976,7 @@
  {
   "id": "q046",
   "topic": "Oncology",
+  "score": "Oncology and Tumor Biology",
   "stem": "A 28-year-old woman with breast cancer has a brother who had osteosarcoma and a mother with adrenocortical carcinoma. Which gene is most likely mutated?",
   "choices": [
    "TP53",
